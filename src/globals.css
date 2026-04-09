@@ -1,0 +1,240 @@
+@import "tailwindcss";
+
+/* ── Light ──────────────────────────────────────────────────────────────────── */
+:root {
+  --brand: 220 90% 56%;
+  --brand-foreground: 0 0% 100%;
+  --background: 0 0% 100%;
+  --foreground: 224 71% 4%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 71% 4%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 224 71% 4%;
+  --primary: 220 90% 56%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 14% 96%;
+  --secondary-foreground: 224 71% 4%;
+  --muted: 220 14% 96%;
+  --muted-foreground: 220 9% 46%;
+  --accent: 220 14% 96%;
+  --accent-foreground: 224 71% 4%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 220 90% 56%;
+  --radius: 0.5rem;
+}
+
+/* ── Dark ───────────────────────────────────────────────────────────────────── */
+.dark {
+  --brand: 220 90% 65%;
+  --brand-foreground: 0 0% 100%;
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+  --card: 224 71% 4%;
+  --card-foreground: 213 31% 91%;
+  --popover: 224 71% 4%;
+  --popover-foreground: 213 31% 91%;
+  --primary: 220 90% 65%;
+  --primary-foreground: 224 71% 4%;
+  --secondary: 222 47% 11%;
+  --secondary-foreground: 213 31% 91%;
+  --muted: 223 47% 11%;
+  --muted-foreground: 215 16% 57%;
+  --accent: 222 47% 11%;
+  --accent-foreground: 213 31% 91%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 213 31% 91%;
+  --border: 216 34% 17%;
+  --input: 216 34% 17%;
+  --ring: 220 90% 65%;
+}
+
+/* ── Synthwave ──────────────────────────────────────────────────────────────── */
+.synthwave {
+  --brand: 320 100% 65%;
+  --brand-foreground: 0 0% 100%;
+  --background: 268 80% 7%;
+  --foreground: 300 8% 92%;
+  --card: 270 55% 11%;
+  --card-foreground: 300 8% 92%;
+  --popover: 270 55% 11%;
+  --popover-foreground: 300 8% 92%;
+  --primary: 320 100% 65%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 280 45% 16%;
+  --secondary-foreground: 300 8% 92%;
+  --muted: 270 40% 14%;
+  --muted-foreground: 285 25% 65%;
+  --accent: 185 100% 55%;
+  --accent-foreground: 268 80% 7%;
+  --destructive: 0 90% 58%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 285 50% 28%;
+  --input: 280 45% 16%;
+  --ring: 320 100% 65%;
+}
+
+.synthwave body {
+  background: linear-gradient(160deg, hsl(268 80% 7%) 0%, hsl(290 60% 12%) 50%, hsl(250 70% 9%) 100%);
+  min-height: 100vh;
+}
+
+/* ── Terminal ───────────────────────────────────────────────────────────────── */
+.terminal {
+  --brand: 120 100% 45%;
+  --brand-foreground: 0 0% 0%;
+  --background: 120 8% 4%;
+  --foreground: 120 70% 72%;
+  --card: 120 8% 7%;
+  --card-foreground: 120 70% 72%;
+  --popover: 120 8% 7%;
+  --popover-foreground: 120 70% 72%;
+  --primary: 120 100% 45%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 120 12% 12%;
+  --secondary-foreground: 120 70% 72%;
+  --muted: 120 8% 10%;
+  --muted-foreground: 120 35% 48%;
+  --accent: 120 80% 35%;
+  --accent-foreground: 0 0% 0%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 120 30% 18%;
+  --input: 120 12% 12%;
+  --ring: 120 100% 45%;
+  --radius: 0.125rem;
+}
+
+.terminal body {
+  background-color: hsl(120 8% 4%);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* scanline overlay for terminal theme */
+.terminal body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    hsl(120 100% 0% / 0.04) 2px,
+    hsl(120 100% 0% / 0.04) 4px
+  );
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* ── Base ───────────────────────────────────────────────────────────────────── */
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* ── Button interactions ────────────────────────────────────────────────────── */
+
+/* Light */
+:root button:not([disabled]) {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+:root button:not([disabled]):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px hsl(220 90% 56% / 0.10), 0 1px 2px hsl(0 0% 0% / 0.05);
+}
+:root button:not([disabled]):active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 1px 2px hsl(220 90% 56% / 0.06);
+  transition-duration: 80ms;
+}
+
+/* Dark */
+@keyframes dark-flash {
+  0%   { filter: invert(0) brightness(1); }
+  15%  { filter: invert(0.7) brightness(1.4); }
+  45%  { filter: invert(0.7) brightness(1); }
+  100% { filter: invert(0) brightness(1); }
+}
+.dark button:not([disabled]) {
+  transition: filter 300ms ease, transform 200ms ease;
+}
+.dark button:not([disabled]):hover {
+  filter: invert(0.6);
+}
+.dark button:not([disabled]).btn-clicked {
+  animation: dark-flash 500ms ease-out forwards;
+}
+
+/* Synthwave */
+@keyframes synthwave-neon-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 4px 1px hsl(320 100% 65% / 0.30),
+      0 0 10px 2px hsl(320 100% 65% / 0.12);
+  }
+  50% {
+    box-shadow:
+      0 0 6px 2px hsl(320 100% 65% / 0.50),
+      0 0 18px 5px hsl(320 100% 65% / 0.22),
+      0 0 30px 8px hsl(185 100% 55% / 0.10);
+  }
+}
+@keyframes synthwave-click-pulse {
+  0%   { transform: scale(1);    box-shadow: 0 0  4px 2px hsl(320 100% 65% / 0.4), 0 0 12px  4px hsl(185 100% 55% / 0.2); }
+  30%  { transform: scale(1.06); box-shadow: 0 0 14px 5px hsl(320 100% 65% / 0.6), 0 0 28px 10px hsl(185 100% 55% / 0.3); }
+  65%  { transform: scale(0.97); box-shadow: 0 0  8px 3px hsl(320 100% 65% / 0.3); }
+  100% { transform: scale(1);    box-shadow: 0 0  4px 1px hsl(320 100% 65% / 0.15); }
+}
+.synthwave button:not([disabled]) {
+  transition: color 200ms ease;
+}
+.synthwave button:not([disabled]):hover {
+  animation: synthwave-neon-pulse 2s ease-in-out infinite;
+  color: hsl(320 100% 78%);
+}
+.synthwave button:not([disabled]).btn-clicked {
+  animation: synthwave-click-pulse 500ms ease-out forwards;
+}
+
+/* Terminal */
+@keyframes terminal-flicker {
+  0%, 100% { opacity: 1; text-shadow: 0 0 4px hsl(120 100% 45% / 0.8); }
+  50%       { opacity: 0.85; text-shadow: 0 0 8px hsl(120 100% 45% / 0.6); }
+}
+@keyframes terminal-click {
+  0%   { box-shadow: 0 0 0 0 hsl(120 100% 45% / 0); }
+  30%  { box-shadow: 0 0 0 4px hsl(120 100% 45% / 0.5); }
+  100% { box-shadow: 0 0 0 0 hsl(120 100% 45% / 0); }
+}
+.terminal button:not([disabled]) {
+  transition: color 150ms ease, text-shadow 150ms ease;
+}
+.terminal button:not([disabled]):hover {
+  color: hsl(120 100% 65%);
+  text-shadow: 0 0 8px hsl(120 100% 45% / 0.8);
+}
+.terminal button:not([disabled]).btn-clicked {
+  animation: terminal-click 400ms ease-out forwards;
+}
+
+/* Terminal cursor blink for text inputs and typed elements */
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.terminal .cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1em;
+  background-color: hsl(120 100% 45%);
+  animation: cursor-blink 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+}
