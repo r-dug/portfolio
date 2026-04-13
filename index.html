@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Richard Douglas — ML Engineer & Systems Builder" />
     <title>Richard Douglas</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TKFWTMXL10"></script>
+    <!-- Google Consent Mode defaults (before gtag loads) -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TKFWTMXL10"></script>
+    <script>
       gtag('js', new Date());
       gtag('config', 'G-TKFWTMXL10', { send_page_view: false });
     </script>

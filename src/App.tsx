@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { ThemeProvider } from '@/lib/theme'
 import { Analytics } from '@/components/Analytics'
+import { CookieConsent } from '@/components/CookieConsent'
 import { Nav } from '@/components/Nav'
 import { HomePage } from '@/pages/HomePage'
 import { AboutPage } from '@/pages/AboutPage'
@@ -18,6 +19,7 @@ export default function App() {
       <BrowserRouter>
         <div className="min-h-screen bg-[hsl(var(--background))]">
           <Analytics />
+          <CookieConsent />
           <Nav />
           <Routes>
             <Route path="/"                          element={<HomePage />} />
