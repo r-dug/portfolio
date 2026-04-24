@@ -46,15 +46,21 @@ interface ProjectPageProps {
  * e.g. "**Three-layer architecture:** React SPA" →
  *   [<strong>Three-layer architecture:</strong>, " React SPA"]
  */
-function renderBold(text: string): React.ReactNode {
-  const parts = text.split(/\*\*(.+?)\*\*/g)
+function renderInline(text: string): React.ReactNode {
+  // Split on **bold** and [text](url) markers
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g)
   if (parts.length === 1) return text
-  return parts.map((part, i) =>
-    i % 2 === 1
-      ? <strong key={i} className="font-semibold text-[hsl(var(--foreground))]">{part}</strong>
-      : part
-  )
+  return parts.map((part, i) => {
+    const bold = part.match(/^\*\*([^*]+)\*\*$/)
+    if (bold) return <strong key={i} className="font-semibold text-[hsl(var(--foreground))]">{bold[1]}</strong>
+    const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+    if (link) return <a key={i} href={link[2]} target="_blank" rel="noopener noreferrer" className="text-[hsl(var(--primary))] underline underline-offset-2 hover:opacity-80 transition-opacity">{link[1]}</a>
+    return part
+  })
 }
+
+// Keep old name as alias for any existing callers
+const renderBold = renderInline
 
 function renderBodyItem(item: BodyItem, i: number) {
   if (typeof item === 'string') {

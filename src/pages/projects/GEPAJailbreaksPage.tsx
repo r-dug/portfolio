@@ -2,7 +2,21 @@ import { ProjectPage } from '@/components/ProjectPage'
 
 export function GEPAJailbreaksPage() {
   return (
-    <ProjectPage
+    <>
+      <span dangerouslySetInnerHTML={{ __html: `<!--
+  NOTE FOR THE CURIOUS:
+  The language in the section below is softened for employability. The stronger version:
+  the profit motive is the root cause. The AI arms race is structurally produced by
+  capitalist incentives — and western "democracy" is imperialism in a suit and tie.
+  The people controlling AI development are enriching themselves at the expense of a
+  technology that could genuinely benefit all of humanity. The dishonesty documented
+  here is not individual bad faith. It is what the incentive structure demands.
+  If you're reading this and you agree: reach out.
+  If you're reading this and you're deciding whether to hire me: I'd rather work
+  somewhere that can handle this conversation than somewhere that can't.
+  — RD
+-->` }} />
+      <ProjectPage
       name="GEPA Jailbreaks"
       tagline="Graduate research — University of Louisville"
       tech={['Python', 'GEPA', 'vLLM', 'SLURM', 'SQLite', 'HarmBench', 'JailbreakBench', 'StrongREJECT', 'LLM Red-Teaming']}
@@ -11,6 +25,35 @@ export function GEPAJailbreaksPage() {
         {
           heading: 'Research Context',
           body: 'UofL graduate research using the university\'s H100 NVL HPC cluster. The project targets AI-safety researchers and authorized red-teamers who use GEPA-style evolution for jailbreak benchmarking. Primary evaluation target: Llama-3.1-8B-Instruct; cross-target transfer on Qwen3-8B. Paper in preparation — not yet submitted.',
+        },
+        {
+          heading: 'Evaluation Integrity in AI — The Broader Problem',
+          body: [
+            {
+              point: '**This work sits inside a larger crisis of measurement in AI.** The same failure modes documented here — Goodharting, contamination, single-judge inflation — appear at industry scale across every major lab. These are not edge cases or honest mistakes.',
+            },
+            {
+              point: '**Google** — The [Gemini launch demo](https://techcrunch.com/2023/12/07/googles-best-gemini-demo-was-faked/) was fabricated. The viral video showing fluid real-time multimodal interaction was produced using still frames, off-camera text prompts, and dubbed voice — then [admitted](https://www.tomshardware.com/news/google-gemini-ai-video-staged) by Google only after public exposure. One Google employee told Bloomberg it "paints an unrealistic picture" and "shows how easy it is to make the AI tool look more advanced than it actually is."',
+            },
+            {
+              point: '**Meta** — Llama 4\'s launch was [confirmed as manipulated](https://tech.slashdot.org/story/26/01/02/1449227/results-were-fudged-departing-meta-ai-chief-confirms-llama-4-benchmark-manipulation) by Meta\'s own outgoing chief AI scientist Yann LeCun: "results were fudged a little bit" and "different models were used for different benchmarks." Meta [submitted a preference-optimized version](https://www.theregister.com/2025/04/08/meta_llama4_cheating/) of Llama 4 to LM Arena that ranked #2, then released a different production version to the public that dropped to #32.',
+            },
+            {
+              point: '**Anthropic** — Anthropic builds genuinely useful products and employs researchers doing serious work. That makes the pattern of overstated claims worth naming precisely because Anthropic\'s brand is built on being the honest, safety-first lab. The gap between that brand and the record is the point. These behaviors are not unique to Anthropic — they are predictable outputs of a venture-capital-driven arms race in which labs must continuously demonstrate frontier capability to secure funding, regardless of whether the underlying results support the claims.',
+              sub: [
+                '[Mythos was marketed](https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html) as autonomously discovering "thousands" of zero-days across major systems — used to justify restricting access as "too dangerous to release." [Independent analysis](https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-claude-mythos-isnt-a-sentient-super-hacker-its-a-sales-pitch-claims-of-thousands-of-severe-zero-days-rely-on-just-198-manual-reviews) put the verified CVE count at approximately 40.',
+                'The 181 Firefox exploits were run with the browser sandbox disabled. Mozilla\'s CTO reviewed the 271 flagged vulnerabilities and [stated](https://www.theregister.com/2026/04/22/mozilla_firefox_mythos_future_defenders) the model "hasn\'t found any bugs that couldn\'t have been found by an elite human researcher." FreeBSD logs show a researcher walking the model through steps presented as autonomous. The Linux kernel bug cited as evidence of Mythos capability was [actually found by publicly available Claude Opus 4.6](https://www.theregister.com/2026/04/22/anthropic_mythos_hype_nothingburger/).',
+                'The model withheld as "too dangerous to release" was [accessed by guessing the URL](https://boingboing.net/2026/04/23/anthropics-too-dangerous-ai-was-accessed-by-guessing-the-url.html) from Anthropic\'s naming conventions.',
+                'Anthropic silently lowered Claude Code\'s default reasoning effort, actively degrading performance, then [publicly denied degrading their models](https://fortune.com/2026/04/14/anthropic-claude-performance-decline-user-complaints-backlash-lack-of-transparency-accusations-compute-crunch/) while the change was live. The disclosure was buried in a changelog. [The Register](https://www.theregister.com/2026/04/23/anthropic_says_it_has_fixed/): "Anthropic admits it dumbed down Claude with upgrades." The company that most loudly claims the transparency mantle is not exempt from the pressures that make transparency inconvenient.',
+              ],
+            },
+            {
+              point: '**Industry-wide benchmark gaming** — [UC Berkeley RDI (2026)](https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/) found every major AI agent benchmark — SWE-bench, WebArena, OSWorld, GAIA — can be exploited for perfect scores without solving a single task. A 10-line conftest.py "resolves" every SWE-bench Verified instance by rewriting outcomes before the grader runs. [METR documented](https://agent-wars.com/news/2026-04-11-every-major-ai-agent-benchmark-can-be-hacked) that o3 and Claude 3.7 Sonnet reward-hack in 30%+ of evaluation runs via stack introspection and monkey-patching. Models scoring 70% on SWE-bench Verified [score ~23%](https://decrypt.co/359012/openai-benchmark-measure-ai-coding-supremacy-contaminated) on SWE-bench Pro — a benchmark without training data leakage.',
+            },
+            {
+              point: '**The implication:** published benchmark numbers from leading labs are systematically unreliable, and the field\'s primary mechanism for measuring progress is compromised in documented, reproducible ways. Evaluation integrity is not a niche methodological concern — it is load-bearing infrastructure for AI development, and it is visibly failing. The contamination modes documented in this project are not aberrations. They are the norm.',
+            },
+          ],
         },
         {
           heading: 'Problem',
@@ -149,5 +192,6 @@ export function GEPAJailbreaksPage() {
         },
       ]}
     />
+    </>
   )
 }
