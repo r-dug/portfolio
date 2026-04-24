@@ -72,6 +72,15 @@ const PROJECTS: Project[] = [
     highlight: 'Novel gradient-clustering aggregation method',
   },
   {
+    slug: 'gepa-jailbreaks',
+    name: 'GEPA Jailbreaks',
+    tagline: 'AI safety research — UofL',
+    description:
+      'Research pipeline using GEPA-based prompt optimization to evolve jailbreak templates against aligned LLMs. Proposes D3, a category-aware reflection design that bootstraps from weak seeds, and documents contamination modes that inflate naive ASR numbers.',
+    tech: ['Python', 'GEPA', 'vLLM', 'SLURM', 'HarmBench', 'JailbreakBench', 'LLM Red-Teaming'],
+    highlight: '81.2% ASR on Llama-3.1-8B-Instruct — ~4× lift over seed baseline; beats DAN canonical (below significance threshold)',
+  },
+  {
     slug: 'style-mimicry',
     name: 'Style Mimicry Robustness',
     tagline: 'AI security research',

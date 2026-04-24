@@ -12,6 +12,7 @@ import { NeonatalAIPage } from '@/pages/projects/NeonatalAIPage'
 import { FungusClassifierPage } from '@/pages/projects/FungusClassifierPage'
 import { FedLearningPage } from '@/pages/projects/FedLearningPage'
 import { StyleMimicryPage } from '@/pages/projects/StyleMimicryPage'
+import { GEPAJailbreaksPage } from '@/pages/projects/GEPAJailbreaksPage'
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
             <Route path="/projects/fungus-classifier" element={<FungusClassifierPage />} />
             <Route path="/projects/federated-learning" element={<FedLearningPage />} />
             <Route path="/projects/style-mimicry"    element={<StyleMimicryPage />} />
+            <Route path="/projects/gepa-jailbreaks"  element={<GEPAJailbreaksPage />} />
             <Route path="*"                          element={<Navigate to="/" replace />} />
           </Routes>
           <p style={{ display: 'none' }}>
