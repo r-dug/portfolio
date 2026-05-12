@@ -213,7 +213,7 @@ export function Chatbot() {
   const [thinkingMode, setThinkingMode] = useState(false)
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
-  const { status, progress, error, loadModel, generate } = useWllama()
+  const { status, progress, loadModel, generate } = useWllama()
   const abortRef = useRef<AbortController | null>(null)
   const sessionId = useRef(crypto.randomUUID())
   const messagesEndRef = useRef<HTMLDivElement>(null)

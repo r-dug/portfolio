@@ -63,7 +63,7 @@ export function useWllama(): WllamaHook {
       try {
         const result = await wllamaRef.current.createChatCompletion(messages, {
           nPredict: 768,
-          temperature: 0.7,
+          sampling: { temp: 0.7 },
           onNewToken: (_token, _piece, currentText) => {
             onToken(currentText)
           },

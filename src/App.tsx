@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { ThemeProvider } from '@/lib/theme'
 import { Analytics } from '@/components/Analytics'
 import { CookieConsent } from '@/components/CookieConsent'
@@ -18,7 +18,7 @@ import { Chatbot } from '@/components/Chatbot'
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="min-h-screen bg-[hsl(var(--background))]">
           <Analytics />
           <CookieConsent />
@@ -38,7 +38,7 @@ export default function App() {
             <Route path="*"                          element={<Navigate to="/" replace />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   )
 }
