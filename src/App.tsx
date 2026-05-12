@@ -13,6 +13,7 @@ import { FungusClassifierPage } from '@/pages/projects/FungusClassifierPage'
 import { FedLearningPage } from '@/pages/projects/FedLearningPage'
 import { StyleMimicryPage } from '@/pages/projects/StyleMimicryPage'
 import { GEPAJailbreaksPage } from '@/pages/projects/GEPAJailbreaksPage'
+import { Chatbot } from '@/components/Chatbot'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <div className="min-h-screen bg-[hsl(var(--background))]">
           <Analytics />
           <CookieConsent />
+          <Chatbot />
           <Nav />
           <Routes>
             <Route path="/"                          element={<HomePage />} />
@@ -35,7 +37,6 @@ export default function App() {
             <Route path="/projects/gepa-jailbreaks"  element={<GEPAJailbreaksPage />} />
             <Route path="*"                          element={<Navigate to="/" replace />} />
           </Routes>
-
         </div>
       </BrowserRouter>
     </ThemeProvider>

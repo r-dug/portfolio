@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]: This XML file does not appear to have any style information associated with it. The document tree is shown below.
+  - generic [ref=e4]:
+    - generic [ref=e7]: <Error>
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: <Code>
+        - text: AccessDenied
+        - generic [ref=e11]: </Code>
+      - generic [ref=e12]:
+        - generic [ref=e13]: <Message>
+        - text: Access Denied
+        - generic [ref=e14]: </Message>
+      - generic [ref=e15]:
+        - generic [ref=e16]: <RequestId>
+        - text: YY9WDT47QD11F009
+        - generic [ref=e17]: </RequestId>
+      - generic [ref=e18]:
+        - generic [ref=e19]: <HostId>
+        - text: L+ZWvGa2IhpK1C51KFosE0xuZu/crkp/fr8ph4zwitJPxl8tKLFDMqPYQmxficqq/fej15a1eKMzPMnz3LXg3pCZfpyzbcuh
+        - generic [ref=e20]: </HostId>
+    - generic [ref=e22]: </Error>

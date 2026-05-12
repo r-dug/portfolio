@@ -1,0 +1,9 @@
+[    1235ms] Uncaught ParseError: KaTeX parse error: Expected 'EOF', got '\qed' at position 1: \̲q̲e̲d̲
+    at e (https://distill.pub/third-party/katex/katex.min.js:0:16398)
+    at e (https://distill.pub/third-party/katex/katex.min.js:0:17847)
+    at e (https://distill.pub/third-party/katex/katex.min.js:0:18322)
+    at e (https://distill.pub/third-party/katex/katex.min.js:0:18222)
+    at e (https://distill.pub/third-party/katex/katex.min.js:4:12697)
+    at e (https://distill.pub/third-party/katex/katex.min.js:0:1147)
+    at renderContent (https://distill.pub/template.v2.js:805:14)
+    at katexLoadedCallback (https://distill.pub/template.v2.js:768:16)

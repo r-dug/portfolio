@@ -1,0 +1,576 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e4]:
+    - link [ref=e5] [cursor=pointer]:
+      - /url: /
+      - img [ref=e6]
+    - generic [ref=e7]:
+      - heading "Jay Alammar" [level=1] [ref=e8] [cursor=pointer]:
+        - link "Jay Alammar" [ref=e9]:
+          - /url: /
+      - paragraph [ref=e10]:
+        - text: Visualizing machine learning one concept at a time.
+        - text: Read our book,
+        - link "Hands-On Large Language Models" [ref=e11] [cursor=pointer]:
+          - /url: https://www.LLM-book.com
+        - text: and follow me on
+        - link "LinkedIn" [ref=e12] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/jalammar/
+        - text: ","
+        - link "Bluesky" [ref=e13] [cursor=pointer]:
+          - /url: https://bsky.app/profile/jayalammar.bsky.social
+        - text: ","
+        - link "Substack" [ref=e14] [cursor=pointer]:
+          - /url: https://newsletter.languagemodels.co/
+        - text: ","
+        - link "X" [ref=e15] [cursor=pointer]:
+          - /url: https://x.com/JayAlammar
+        - text: ","
+        - link "YouTube" [ref=e16] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCmOwsoHty5PrmE-3QhUBfPQ
+    - navigation [ref=e17]:
+      - link "Blog" [ref=e18] [cursor=pointer]:
+        - /url: /
+      - link "About" [ref=e19] [cursor=pointer]:
+        - /url: /about
+  - main [ref=e20]:
+    - article [ref=e21]:
+      - heading "The Illustrated Transformer" [level=1] [ref=e22]
+      - generic [ref=e23]:
+        - paragraph [ref=e24]:
+          - generic [ref=e25]:
+            - text: "Discussions:"
+            - link "Hacker News (65 points, 4 comments)" [ref=e26] [cursor=pointer]:
+              - /url: https://news.ycombinator.com/item?id=18351674
+            - text: ","
+            - link "Reddit r/MachineLearning (29 points, 3 comments)" [ref=e27] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/MachineLearning/comments/8uh2yz/p_the_illustrated_transformer_a_visual_look_at/
+          - generic [ref=e28]:
+            - text: "Translations:"
+            - link "Arabic" [ref=e29] [cursor=pointer]:
+              - /url: https://www.mundhor.site/post/post14
+            - text: ","
+            - link "Chinese (Simplified) 1" [ref=e30] [cursor=pointer]:
+              - /url: https://blog.csdn.net/yujianmin1990/article/details/85221271
+            - text: ","
+            - link "Chinese (Simplified) 2" [ref=e31] [cursor=pointer]:
+              - /url: https://blog.csdn.net/qq_36667170/article/details/124359818
+            - text: ","
+            - link "French 1" [ref=e32] [cursor=pointer]:
+              - /url: https://a-coles.github.io/2020/11/15/transformer-illustre.html
+            - text: ","
+            - link "French 2" [ref=e33] [cursor=pointer]:
+              - /url: https://lbourdois.github.io/blog/nlp/Transformer/
+            - text: ","
+            - link "Italian" [ref=e34] [cursor=pointer]:
+              - /url: https://medium.com/@val.mannucci/il-transformer-illustrato-it-37a78e3e2348
+            - text: ","
+            - link "Japanese" [ref=e35] [cursor=pointer]:
+              - /url: https://tips-memo.com/translation-jayalmmar-transformer
+            - text: ","
+            - link "Korean" [ref=e36] [cursor=pointer]:
+              - /url: https://nlpinkorean.github.io/illustrated-transformer/
+            - text: ","
+            - link "Persian" [ref=e37] [cursor=pointer]:
+              - /url: http://dml.qom.ac.ir/2022/05/17/illustrated-transformer/
+            - text: ","
+            - link "Russian" [ref=e38] [cursor=pointer]:
+              - /url: https://habr.com/ru/post/486358/
+            - text: ","
+            - link "Spanish 1" [ref=e39] [cursor=pointer]:
+              - /url: https://www.ibidemgroup.com/edu/transformer-ilustrado-jay-alammar/
+            - text: ","
+            - link "Spanish 2" [ref=e40] [cursor=pointer]:
+              - /url: https://hackernoon.com/el-transformador-ilustrado-una-traduccion-al-espanol-0y73wwp
+            - text: ","
+            - link "Vietnamese" [ref=e41] [cursor=pointer]:
+              - /url: https://trituenhantao.io/tin-tuc/minh-hoa-transformer/
+          - generic [ref=e42]:
+            - text: "Watch: MIT’s"
+            - link "Deep Learning State of the Art" [ref=e43] [cursor=pointer]:
+              - /url: https://youtu.be/53YvP6gdD7U?t=432
+            - text: lecture referencing this post
+          - generic [ref=e44]:
+            - text: Featured in courses at
+            - link "Stanford" [ref=e45] [cursor=pointer]:
+              - /url: https://web.stanford.edu/class/cs224n/
+            - text: ","
+            - link "Harvard" [ref=e46] [cursor=pointer]:
+              - /url: https://scholar.harvard.edu/binxuw/classes/machine-learning-scratch/materials/transformers
+            - text: ","
+            - link "MIT" [ref=e47] [cursor=pointer]:
+              - /url: https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019/d39a6eed387ee90b1f72a01949c35c7b_MIT6_S897S19_lec8.pdf
+            - text: ","
+            - link "Princeton" [ref=e48] [cursor=pointer]:
+              - /url: https://www.cs.princeton.edu/courses/archive/fall22/cos597G/
+            - text: ","
+            - link "CMU" [ref=e49] [cursor=pointer]:
+              - /url: https://www.cs.cmu.edu/~leili/course/mldl22w/14-Transformer.pdf
+            - text: and others
+        - table [ref=e50]:
+          - rowgroup [ref=e51]:
+            - 'row "Update: This post has now become a book! Check out LLM-book.com which contains (Chapter 3) an updated and expanded version of this post speaking about the latest Transformer models and how they''ve evolved in the seven years since the original Transformer (like Multi-Query Attention and RoPE Positional embeddings)." [ref=e52]':
+              - cell [ref=e53]:
+                - link [ref=e54] [cursor=pointer]:
+                  - /url: https://www.llm-book.com
+                  - img [ref=e55]
+              - 'cell "Update: This post has now become a book! Check out LLM-book.com which contains (Chapter 3) an updated and expanded version of this post speaking about the latest Transformer models and how they''ve evolved in the seven years since the original Transformer (like Multi-Query Attention and RoPE Positional embeddings)." [ref=e56]':
+                - text: "Update: This post has now become a book! Check out"
+                - link "LLM-book.com" [ref=e57] [cursor=pointer]:
+                  - /url: https://llm-book.com
+                - text: which contains (Chapter 3) an updated and expanded version of this post speaking about the latest Transformer models and how they've evolved in the seven years since the original Transformer (like Multi-Query Attention and RoPE Positional embeddings).
+        - paragraph [ref=e58]:
+          - text: In the
+          - link "previous post, we looked at Attention" [ref=e59] [cursor=pointer]:
+            - /url: https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+          - text: – a ubiquitous method in modern deep learning models. Attention is a concept that helped improve the performance of neural machine translation applications. In this post, we will look at
+          - strong [ref=e60]: The Transformer
+          - text: – a model that uses attention to boost the speed with which these models can be trained. The Transformer outperforms the Google Neural Machine Translation model in specific tasks. The biggest benefit, however, comes from how The Transformer lends itself to parallelization. It is in fact Google Cloud’s recommendation to use The Transformer as a reference model to use their
+          - link "Cloud TPU" [ref=e61] [cursor=pointer]:
+            - /url: https://cloud.google.com/tpu/
+          - text: offering. So let’s try to break the model apart and look at how it functions.
+        - paragraph [ref=e62]:
+          - text: The Transformer was proposed in the paper
+          - link "Attention is All You Need" [ref=e63] [cursor=pointer]:
+            - /url: https://arxiv.org/abs/1706.03762
+          - text: . A TensorFlow implementation of it is available as a part of the
+          - link "Tensor2Tensor" [ref=e64] [cursor=pointer]:
+            - /url: https://github.com/tensorflow/tensor2tensor
+          - text: package. Harvard’s NLP group created a
+          - link "guide annotating the paper with PyTorch implementation" [ref=e65] [cursor=pointer]:
+            - /url: http://nlp.seas.harvard.edu/2018/04/03/attention.html
+          - text: . In this post, we will attempt to oversimplify things a bit and introduce the concepts one by one to hopefully make it easier to understand to people without in-depth knowledge of the subject matter.
+        - paragraph [ref=e66]:
+          - strong [ref=e67]: 2025 Update
+          - text: ": We’ve built a"
+          - link "free short course" [ref=e68] [cursor=pointer]:
+            - /url: https://bit.ly/4aRnn7Z
+          - text: "that brings the contents of this post up-to-date with animations:"
+        - iframe [ref=e70]:
+          - generic [active] [ref=f1e1]:
+            - generic "YouTube Video Player" [ref=f1e3]
+            - generic [ref=f1e5]:
+              - generic:
+                - generic:
+                  - button "Play video" [ref=f1e10] [cursor=pointer]
+                  - button "Hide player controls" [ref=f1e12] [cursor=pointer]
+                  - generic [ref=f1e14]:
+                    - generic [ref=f1e19]:
+                      - generic [ref=f1e20]:
+                        - 'link "Learn how ChatGPT and DeepSeek models work: How Transformer LLMs Work [Free Course]" [ref=f1e21] [cursor=pointer]':
+                          - /url: https://www.youtube.com/watch?v=k1ILy23t89E
+                        - link "Jay Alammar" [ref=f1e22] [cursor=pointer]:
+                          - /url: /channel/UCmOwsoHty5PrmE-3QhUBfPQ
+                          - generic [ref=f1e23]: Jay Alammar
+                      - generic [ref=f1e24]:
+                        - button [ref=f1e25] [cursor=pointer]
+                        - generic [ref=f1e27]:
+                          - generic: Jay Alammar
+                          - generic: 63.9K subscribers
+                    - generic [ref=f1e28]:
+                      - button "Share" [ref=f1e31] [cursor=pointer]:
+                        - generic [ref=f1e35]:
+                          - img
+                      - link "Watch on YouTube" [ref=f1e42] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=k1ILy23t89E
+                        - generic [ref=f1e45]:
+                          - text: Watch on
+                          - img [ref=f1e47]:
+                            - generic [ref=f1e49]:
+                              - img
+        - heading "A High-Level Look" [level=2] [ref=e71]
+        - paragraph [ref=e72]: Let’s begin by looking at the model as a single black box. In a machine translation application, it would take a sentence in one language, and output its translation in another.
+        - img [ref=e74]
+        - paragraph [ref=e75]: Popping open that Optimus Prime goodness, we see an encoding component, a decoding component, and connections between them.
+        - img [ref=e77]
+        - paragraph [ref=e78]: The encoding component is a stack of encoders (the paper stacks six of them on top of each other – there’s nothing magical about the number six, one can definitely experiment with other arrangements). The decoding component is a stack of decoders of the same number.
+        - img [ref=e80]
+        - paragraph [ref=e81]: "The encoders are all identical in structure (yet they do not share weights). Each one is broken down into two sub-layers:"
+        - img [ref=e83]
+        - paragraph [ref=e84]: The encoder’s inputs first flow through a self-attention layer – a layer that helps the encoder look at other words in the input sentence as it encodes a specific word. We’ll look closer at self-attention later in the post.
+        - paragraph [ref=e85]: The outputs of the self-attention layer are fed to a feed-forward neural network. The exact same feed-forward network is independently applied to each position.
+        - paragraph [ref=e86]:
+          - text: The decoder has both those layers, but between them is an attention layer that helps the decoder focus on relevant parts of the input sentence (similar what attention does in
+          - link "seq2seq models" [ref=e87] [cursor=pointer]:
+            - /url: https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+          - text: ).
+        - img [ref=e89]
+        - heading "Bringing The Tensors Into The Picture" [level=2] [ref=e90]
+        - paragraph [ref=e91]: Now that we’ve seen the major components of the model, let’s start to look at the various vectors/tensors and how they flow between these components to turn the input of a trained model into an output.
+        - paragraph [ref=e92]:
+          - text: As is the case in NLP applications in general, we begin by turning each input word into a vector using an
+          - link "embedding algorithm" [ref=e93] [cursor=pointer]:
+            - /url: https://medium.com/deeper-learning/glossary-of-deep-learning-word-embedding-f90c3cec34ca
+          - text: .
+        - paragraph [ref=e94]
+        - generic [ref=e95]:
+          - img [ref=e96]
+          - text: Each word is embedded into a vector of size 512. We'll represent those vectors with these simple boxes.
+        - paragraph [ref=e97]: The embedding only happens in the bottom-most encoder. The abstraction that is common to all the encoders is that they receive a list of vectors each of the size 512 – In the bottom encoder that would be the word embeddings, but in other encoders, it would be the output of the encoder that’s directly below. The size of this list is hyperparameter we can set – basically it would be the length of the longest sentence in our training dataset.
+        - paragraph [ref=e98]: After embedding the words in our input sequence, each of them flows through each of the two layers of the encoder.
+        - img [ref=e100]
+        - paragraph [ref=e101]: Here we begin to see one key property of the Transformer, which is that the word in each position flows through its own path in the encoder. There are dependencies between these paths in the self-attention layer. The feed-forward layer does not have those dependencies, however, and thus the various paths can be executed in parallel while flowing through the feed-forward layer.
+        - paragraph [ref=e102]: Next, we’ll switch up the example to a shorter sentence and we’ll look at what happens in each sub-layer of the encoder.
+        - heading "Now We’re Encoding!" [level=2] [ref=e103]
+        - paragraph [ref=e104]: As we’ve mentioned already, an encoder receives a list of vectors as input. It processes this list by passing these vectors into a ‘self-attention’ layer, then into a feed-forward neural network, then sends out the output upwards to the next encoder.
+        - generic [ref=e105]:
+          - img [ref=e106]
+          - text: The word at each position passes through a self-attention process. Then, they each pass through a feed-forward neural network -- the exact same network with each vector flowing through it separately.
+        - heading "Self-Attention at a High Level" [level=2] [ref=e107]
+        - paragraph [ref=e108]: Don’t be fooled by me throwing around the word “self-attention” like it’s a concept everyone should be familiar with. I had personally never came across the concept until reading the Attention is All You Need paper. Let us distill how it works.
+        - paragraph [ref=e109]: "Say the following sentence is an input sentence we want to translate:"
+        - paragraph [ref=e110]:
+          - text: ”
+          - code [ref=e111]: The animal didn't cross the street because it was too tired
+          - text: ”
+        - paragraph [ref=e112]: What does “it” in this sentence refer to? Is it referring to the street or to the animal? It’s a simple question to a human, but not as simple to an algorithm.
+        - paragraph [ref=e113]: When the model is processing the word “it”, self-attention allows it to associate “it” with “animal”.
+        - paragraph [ref=e114]: As the model processes each word (each position in the input sequence), self attention allows it to look at other positions in the input sequence for clues that can help lead to a better encoding for this word.
+        - paragraph [ref=e115]: If you’re familiar with RNNs, think of how maintaining a hidden state allows an RNN to incorporate its representation of previous words/vectors it has processed with the current one it’s processing. Self-attention is the method the Transformer uses to bake the “understanding” of other relevant words into the one we’re currently processing.
+        - generic [ref=e116]:
+          - img [ref=e117]
+          - text: "As we are encoding the word \"it\" in encoder #5 (the top encoder in the stack), part of the attention mechanism was focusing on \"The Animal\", and baked a part of its representation into the encoding of \"it\"."
+        - paragraph [ref=e118]:
+          - text: Be sure to check out the
+          - link "Tensor2Tensor notebook" [ref=e119] [cursor=pointer]:
+            - /url: https://colab.research.google.com/github/tensorflow/tensor2tensor/blob/master/tensor2tensor/notebooks/hello_t2t.ipynb
+          - text: where you can load a Transformer model, and examine it using this interactive visualization.
+        - heading "Self-Attention in Detail" [level=2] [ref=e120]
+        - paragraph [ref=e121]: Let’s first look at how to calculate self-attention using vectors, then proceed to look at how it’s actually implemented – using matrices.
+        - paragraph [ref=e122]:
+          - text: The
+          - strong [ref=e123]: first step
+          - text: in calculating self-attention is to create three vectors from each of the encoder’s input vectors (in this case, the embedding of each word). So for each word, we create a Query vector, a Key vector, and a Value vector. These vectors are created by multiplying the embedding by three matrices that we trained during the training process.
+        - paragraph [ref=e124]: Notice that these new vectors are smaller in dimension than the embedding vector. Their dimensionality is 64, while the embedding and encoder input/output vectors have dimensionality of 512. They don’t HAVE to be smaller, this is an architecture choice to make the computation of multiheaded attention (mostly) constant.
+        - paragraph [ref=e125]
+        - generic [ref=e126]:
+          - img [ref=e127]
+          - text: Multiplying x1 by the WQ weight matrix produces q1, the "query" vector associated with that word. We end up creating a "query", a "key", and a "value" projection of each word in the input sentence.
+        - paragraph [ref=e128]
+        - paragraph [ref=e129]:
+          - text: What are the “query”, “key”, and “value” vectors?
+          - text: They’re abstractions that are useful for calculating and thinking about attention. Once you proceed with reading how attention is calculated below, you’ll know pretty much all you need to know about the role each of these vectors plays.
+        - paragraph [ref=e130]:
+          - text: The
+          - strong [ref=e131]: second step
+          - text: in calculating self-attention is to calculate a score. Say we’re calculating the self-attention for the first word in this example, “Thinking”. We need to score each word of the input sentence against this word. The score determines how much focus to place on other parts of the input sentence as we encode a word at a certain position.
+        - paragraph [ref=e132]: "The score is calculated by taking the dot product of the query vector with the key vector of the respective word we’re scoring. So if we’re processing the self-attention for the word in position #1, the first score would be the dot product of q1 and k1. The second score would be the dot product of q1 and k2."
+        - paragraph [ref=e133]
+        - img [ref=e135]
+        - paragraph [ref=e136]
+        - paragraph [ref=e137]:
+          - text: The
+          - strong [ref=e138]: third and fourth steps
+          - text: are to divide the scores by 8 (the square root of the dimension of the key vectors used in the paper – 64. This leads to having more stable gradients. There could be other possible values here, but this is the default), then pass the result through a softmax operation. Softmax normalizes the scores so they’re all positive and add up to 1.
+        - paragraph [ref=e139]
+        - img [ref=e141]
+        - paragraph [ref=e142]: This softmax score determines how much each word will be expressed at this position. Clearly the word at this position will have the highest softmax score, but sometimes it’s useful to attend to another word that is relevant to the current word.
+        - paragraph [ref=e143]
+        - paragraph [ref=e144]:
+          - text: The
+          - strong [ref=e145]: fifth step
+          - text: is to multiply each value vector by the softmax score (in preparation to sum them up). The intuition here is to keep intact the values of the word(s) we want to focus on, and drown-out irrelevant words (by multiplying them by tiny numbers like 0.001, for example).
+        - paragraph [ref=e146]:
+          - text: The
+          - strong [ref=e147]: sixth step
+          - text: is to sum up the weighted value vectors. This produces the output of the self-attention layer at this position (for the first word).
+        - paragraph [ref=e148]
+        - img [ref=e150]
+        - paragraph [ref=e151]: That concludes the self-attention calculation. The resulting vector is one we can send along to the feed-forward neural network. In the actual implementation, however, this calculation is done in matrix form for faster processing. So let’s look at that now that we’ve seen the intuition of the calculation on the word level.
+        - heading "Matrix Calculation of Self-Attention" [level=2] [ref=e152]
+        - paragraph [ref=e153]:
+          - strong [ref=e154]: The first step
+          - text: is to calculate the Query, Key, and Value matrices. We do that by packing our embeddings into a matrix X, and multiplying it by the weight matrices we’ve trained (WQ, WK, WV).
+        - generic [ref=e155]:
+          - img [ref=e156]
+          - text: Every row in the X matrix corresponds to a word in the input sentence. We again see the difference in size of the embedding vector (512, or 4 boxes in the figure), and the q/k/v vectors (64, or 3 boxes in the figure)
+        - paragraph [ref=e157]
+        - paragraph [ref=e158]:
+          - strong [ref=e159]: Finally
+          - text: ", since we’re dealing with matrices, we can condense steps two through six in one formula to calculate the outputs of the self-attention layer."
+        - generic [ref=e160]:
+          - img [ref=e161]
+          - text: The self-attention calculation in matrix form
+        - paragraph [ref=e162]
+        - paragraph [ref=e163]
+        - heading "The Beast With Many Heads" [level=2] [ref=e164]
+        - paragraph [ref=e165]: "The paper further refined the self-attention layer by adding a mechanism called “multi-headed” attention. This improves the performance of the attention layer in two ways:"
+        - list [ref=e166]:
+          - listitem [ref=e167]:
+            - paragraph [ref=e168]: It expands the model’s ability to focus on different positions. Yes, in the example above, z1 contains a little bit of every other encoding, but it could be dominated by the actual word itself. If we’re translating a sentence like “The animal didn’t cross the street because it was too tired”, it would be useful to know which word “it” refers to.
+          - listitem [ref=e169]:
+            - paragraph [ref=e170]: It gives the attention layer multiple “representation subspaces”. As we’ll see next, with multi-headed attention we have not only one, but multiple sets of Query/Key/Value weight matrices (the Transformer uses eight attention heads, so we end up with eight sets for each encoder/decoder). Each of these sets is randomly initialized. Then, after training, each set is used to project the input embeddings (or vectors from lower encoders/decoders) into a different representation subspace.
+        - generic [ref=e171]:
+          - img [ref=e172]
+          - text: With multi-headed attention, we maintain separate Q/K/V weight matrices for each head resulting in different Q/K/V matrices. As we did before, we multiply X by the WQ/WK/WV matrices to produce Q/K/V matrices.
+        - paragraph [ref=e173]: If we do the same self-attention calculation we outlined above, just eight different times with different weight matrices, we end up with eight different Z matrices
+        - img [ref=e175]
+        - paragraph [ref=e176]
+        - paragraph [ref=e177]: This leaves us with a bit of a challenge. The feed-forward layer is not expecting eight matrices – it’s expecting a single matrix (a vector for each word). So we need a way to condense these eight down into a single matrix.
+        - paragraph [ref=e178]: How do we do that? We concat the matrices then multiply them by an additional weights matrix WO.
+        - img [ref=e180]
+        - paragraph [ref=e181]: That’s pretty much all there is to multi-headed self-attention. It’s quite a handful of matrices, I realize. Let me try to put them all in one visual so we can look at them in one place
+        - paragraph [ref=e182]
+        - img [ref=e184]
+        - paragraph [ref=e185]
+        - paragraph [ref=e186]: "Now that we have touched upon attention heads, let’s revisit our example from before to see where the different attention heads are focusing as we encode the word “it” in our example sentence:"
+        - generic [ref=e187]:
+          - img [ref=e188]
+          - text: As we encode the word "it", one attention head is focusing most on "the animal", while another is focusing on "tired" -- in a sense, the model's representation of the word "it" bakes in some of the representation of both "animal" and "tired".
+        - paragraph [ref=e189]
+        - paragraph [ref=e190]: "If we add all the attention heads to the picture, however, things can be harder to interpret:"
+        - img [ref=e192]
+        - heading "Representing The Order of The Sequence Using Positional Encoding" [level=2] [ref=e193]
+        - paragraph [ref=e194]: One thing that’s missing from the model as we have described it so far is a way to account for the order of the words in the input sequence.
+        - paragraph [ref=e195]: To address this, the transformer adds a vector to each input embedding. These vectors follow a specific pattern that the model learns, which helps it determine the position of each word, or the distance between different words in the sequence. The intuition here is that adding these values to the embeddings provides meaningful distances between the embedding vectors once they’re projected into Q/K/V vectors and during dot-product attention.
+        - paragraph [ref=e196]
+        - generic [ref=e197]:
+          - img [ref=e198]
+          - text: To give the model a sense of the order of the words, we add positional encoding vectors -- the values of which follow a specific pattern.
+        - paragraph [ref=e199]
+        - paragraph [ref=e200]: "If we assumed the embedding has a dimensionality of 4, the actual positional encodings would look like this:"
+        - generic [ref=e201]:
+          - img [ref=e202]
+          - text: A real example of positional encoding with a toy embedding size of 4
+        - paragraph [ref=e203]
+        - paragraph [ref=e204]: What might this pattern look like?
+        - paragraph [ref=e205]: In the following figure, each row corresponds to a positional encoding of a vector. So the first row would be the vector we’d add to the embedding of the first word in an input sequence. Each row contains 512 values – each with a value between 1 and -1. We’ve color-coded them so the pattern is visible.
+        - generic [ref=e206]:
+          - img [ref=e207]
+          - text: A real example of positional encoding for 20 words (rows) with an embedding size of 512 (columns). You can see that it appears split in half down the center. That's because the values of the left half are generated by one function (which uses sine), and the right half is generated by another function (which uses cosine). They're then concatenated to form each of the positional encoding vectors.
+        - paragraph [ref=e208]:
+          - text: The formula for positional encoding is described in the paper (section 3.5). You can see the code for generating positional encodings in
+          - link "get_timing_signal_1d()" [ref=e209] [cursor=pointer]:
+            - /url: https://github.com/tensorflow/tensor2tensor/blob/23bd23b9830059fbc349381b70d9429b5c40a139/tensor2tensor/layers/common_attention.py
+            - code [ref=e210]: get_timing_signal_1d()
+          - text: . This is not the only possible method for positional encoding. It, however, gives the advantage of being able to scale to unseen lengths of sequences (e.g. if our trained model is asked to translate a sentence longer than any of those in our training set).
+        - paragraph [ref=e211]:
+          - strong [ref=e212]: "July 2020 Update:"
+          - text: The positional encoding shown above is from the Tensor2Tensor implementation of the Transformer. The method shown in the paper is slightly different in that it doesn’t directly concatenate, but interweaves the two signals. The following figure shows what that looks like.
+          - link "Here’s the code to generate it" [ref=e213] [cursor=pointer]:
+            - /url: https://github.com/jalammar/jalammar.github.io/blob/master/notebookes/transformer/transformer_positional_encoding_graph.ipynb
+          - text: ":"
+        - img [ref=e215]
+        - heading "The Residuals" [level=2] [ref=e216]
+        - paragraph [ref=e217]:
+          - text: One detail in the architecture of the encoder that we need to mention before moving on, is that each sub-layer (self-attention, ffnn) in each encoder has a residual connection around it, and is followed by a
+          - link "layer-normalization" [ref=e218] [cursor=pointer]:
+            - /url: https://arxiv.org/abs/1607.06450
+          - text: step.
+        - img [ref=e220]
+        - paragraph [ref=e221]: "If we’re to visualize the vectors and the layer-norm operation associated with self attention, it would look like this:"
+        - img [ref=e223]
+        - paragraph [ref=e224]: "This goes for the sub-layers of the decoder as well. If we’re to think of a Transformer of 2 stacked encoders and decoders, it would look something like this:"
+        - img [ref=e226]
+        - heading "The Decoder Side" [level=2] [ref=e227]
+        - paragraph [ref=e228]: Now that we’ve covered most of the concepts on the encoder side, we basically know how the components of decoders work as well. But let’s take a look at how they work together.
+        - paragraph [ref=e229]: "The encoder start by processing the input sequence. The output of the top encoder is then transformed into a set of attention vectors K and V. These are to be used by each decoder in its “encoder-decoder attention” layer which helps the decoder focus on appropriate places in the input sequence:"
+        - generic [ref=e230]:
+          - img [ref=e231]
+          - text: After finishing the encoding phase, we begin the decoding phase. Each step in the decoding phase outputs an element from the output sequence (the English translation sentence in this case).
+        - paragraph [ref=e232]: The following steps repeat the process until a special symbol is reached indicating the transformer decoder has completed its output. The output of each step is fed to the bottom decoder in the next time step, and the decoders bubble up their decoding results just like the encoders did. And just like we did with the encoder inputs, we embed and add positional encoding to those decoder inputs to indicate the position of each word.
+        - img [ref=e234]
+        - paragraph [ref=e235]: "The self attention layers in the decoder operate in a slightly different way than the one in the encoder:"
+        - paragraph [ref=e236]:
+          - text: In the decoder, the self-attention layer is only allowed to attend to earlier positions in the output sequence. This is done by masking future positions (setting them to
+          - code [ref=e237]: "-inf"
+          - text: ) before the softmax step in the self-attention calculation.
+        - paragraph [ref=e238]: The “Encoder-Decoder Attention” layer works just like multiheaded self-attention, except it creates its Queries matrix from the layer below it, and takes the Keys and Values matrix from the output of the encoder stack.
+        - heading "The Final Linear and Softmax Layer" [level=2] [ref=e239]
+        - paragraph [ref=e240]: The decoder stack outputs a vector of floats. How do we turn that into a word? That’s the job of the final Linear layer which is followed by a Softmax Layer.
+        - paragraph [ref=e241]: The Linear layer is a simple fully connected neural network that projects the vector produced by the stack of decoders, into a much, much larger vector called a logits vector.
+        - paragraph [ref=e242]: Let’s assume that our model knows 10,000 unique English words (our model’s “output vocabulary”) that it’s learned from its training dataset. This would make the logits vector 10,000 cells wide – each cell corresponding to the score of a unique word. That is how we interpret the output of the model followed by the Linear layer.
+        - paragraph [ref=e243]: The softmax layer then turns those scores into probabilities (all positive, all add up to 1.0). The cell with the highest probability is chosen, and the word associated with it is produced as the output for this time step.
+        - paragraph [ref=e244]
+        - generic [ref=e245]:
+          - img [ref=e246]
+          - text: This figure starts from the bottom with the vector produced as the output of the decoder stack. It is then turned into an output word.
+        - paragraph [ref=e247]
+        - heading "Recap Of Training" [level=2] [ref=e248]
+        - paragraph [ref=e249]: Now that we’ve covered the entire forward-pass process through a trained Transformer, it would be useful to glance at the intuition of training the model.
+        - paragraph [ref=e250]: During training, an untrained model would go through the exact same forward pass. But since we are training it on a labeled training dataset, we can compare its output with the actual correct output.
+        - paragraph [ref=e251]: To visualize this, let’s assume our output vocabulary only contains six words(“a”, “am”, “i”, “thanks”, “student”, and “<eos>” (short for ‘end of sentence’)).
+        - generic [ref=e252]:
+          - img [ref=e253]
+          - text: The output vocabulary of our model is created in the preprocessing phase before we even begin training.
+        - paragraph [ref=e254]: "Once we define our output vocabulary, we can use a vector of the same width to indicate each word in our vocabulary. This also known as one-hot encoding. So for example, we can indicate the word “am” using the following vector:"
+        - generic [ref=e255]:
+          - img [ref=e256]
+          - text: "Example: one-hot encoding of our output vocabulary"
+        - paragraph [ref=e257]: Following this recap, let’s discuss the model’s loss function – the metric we are optimizing during the training phase to lead up to a trained and hopefully amazingly accurate model.
+        - heading "The Loss Function" [level=2] [ref=e258]
+        - paragraph [ref=e259]: Say we are training our model. Say it’s our first step in the training phase, and we’re training it on a simple example – translating “merci” into “thanks”.
+        - paragraph [ref=e260]: What this means, is that we want the output to be a probability distribution indicating the word “thanks”. But since this model is not yet trained, that’s unlikely to happen just yet.
+        - generic [ref=e261]:
+          - img [ref=e262]
+          - text: Since the model's parameters (weights) are all initialized randomly, the (untrained) model produces a probability distribution with arbitrary values for each cell/word. We can compare it with the actual output, then tweak all the model's weights using backpropagation to make the output closer to the desired output.
+        - paragraph [ref=e263]
+        - paragraph [ref=e264]:
+          - text: How do you compare two probability distributions? We simply subtract one from the other. For more details, look at
+          - link "cross-entropy" [ref=e265] [cursor=pointer]:
+            - /url: https://colah.github.io/posts/2015-09-Visual-Information/
+          - text: and
+          - link "Kullback–Leibler divergence" [ref=e266] [cursor=pointer]:
+            - /url: https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained
+          - text: .
+        - paragraph [ref=e267]: "But note that this is an oversimplified example. More realistically, we’ll use a sentence longer than one word. For example – input: “je suis étudiant” and expected output: “i am a student”. What this really means, is that we want our model to successively output probability distributions where:"
+        - list [ref=e268]:
+          - listitem [ref=e269]: Each probability distribution is represented by a vector of width vocab_size (6 in our toy example, but more realistically a number like 30,000 or 50,000)
+          - listitem [ref=e270]: The first probability distribution has the highest probability at the cell associated with the word “i”
+          - listitem [ref=e271]: The second probability distribution has the highest probability at the cell associated with the word “am”
+          - listitem [ref=e272]:
+            - text: And so on, until the fifth output distribution indicates ‘
+            - code [ref=e273]: <end of sentence>
+            - text: ’ symbol, which also has a cell associated with it from the 10,000 element vocabulary.
+        - generic [ref=e274]:
+          - img [ref=e275]
+          - text: The targeted probability distributions we'll train our model against in the training example for one sample sentence.
+        - paragraph [ref=e276]
+        - paragraph [ref=e277]: "After training the model for enough time on a large enough dataset, we would hope the produced probability distributions would look like this:"
+        - generic [ref=e278]:
+          - img [ref=e279]
+          - text: "Hopefully upon training, the model would output the right translation we expect. Of course it's no real indication if this phrase was part of the training dataset (see:"
+          - link "cross validation" [ref=e280] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=TIgfjmp-4BA
+          - text: ). Notice that every position gets a little bit of probability even if it's unlikely to be the output of that time step -- that's a very useful property of softmax which helps the training process.
+        - paragraph [ref=e281]: "Now, because the model produces the outputs one at a time, we can assume that the model is selecting the word with the highest probability from that probability distribution and throwing away the rest. That’s one way to do it (called greedy decoding). Another way to do it would be to hold on to, say, the top two words (say, ‘I’ and ‘a’ for example), then in the next step, run the model twice: once assuming the first output position was the word ‘I’, and another time assuming the first output position was the word ‘a’, and whichever version produced less error considering both positions #1 and #2 is kept. We repeat this for positions #2 and #3…etc. This method is called “beam search”, where in our example, beam_size was two (meaning that at all times, two partial hypotheses (unfinished translations) are kept in memory), and top_beams is also two (meaning we’ll return two translations). These are both hyperparameters that you can experiment with."
+        - heading "Go Forth And Transform" [level=2] [ref=e282]
+        - paragraph [ref=e283]: "I hope you’ve found this a useful place to start to break the ice with the major concepts of the Transformer. If you want to go deeper, I’d suggest these next steps:"
+        - list [ref=e284]:
+          - listitem [ref=e285]:
+            - text: Read the
+            - link "Attention Is All You Need" [ref=e286] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/1706.03762
+            - text: paper, the Transformer blog post (
+            - 'link "Transformer: A Novel Neural Network Architecture for Language Understanding" [ref=e287] [cursor=pointer]':
+              - /url: https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html
+            - text: ), and the
+            - link "Tensor2Tensor announcement" [ref=e288] [cursor=pointer]:
+              - /url: https://ai.googleblog.com/2017/06/accelerating-deep-learning-research.html
+            - text: .
+          - listitem [ref=e289]:
+            - text: Watch
+            - link "Łukasz Kaiser’s talk" [ref=e290] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=rBCqOTEfxvg
+            - text: walking through the model and its details
+          - listitem [ref=e291]:
+            - text: Play with the
+            - link "Jupyter Notebook provided as part of the Tensor2Tensor repo" [ref=e292] [cursor=pointer]:
+              - /url: https://colab.research.google.com/github/tensorflow/tensor2tensor/blob/master/tensor2tensor/notebooks/hello_t2t.ipynb
+          - listitem [ref=e293]:
+            - text: Explore the
+            - link "Tensor2Tensor repo" [ref=e294] [cursor=pointer]:
+              - /url: https://github.com/tensorflow/tensor2tensor
+            - text: .
+        - paragraph [ref=e295]: "Follow-up works:"
+        - list [ref=e296]:
+          - listitem [ref=e297]:
+            - link "Depthwise Separable Convolutions for Neural Machine Translation" [ref=e298] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/1706.03059
+          - listitem [ref=e299]:
+            - link "One Model To Learn Them All" [ref=e300] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/1706.05137
+          - listitem [ref=e301]:
+            - link "Discrete Autoencoders for Sequence Models" [ref=e302] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/1801.09797
+          - listitem [ref=e303]:
+            - link "Generating Wikipedia by Summarizing Long Sequences" [ref=e304] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/1801.10198
+          - listitem [ref=e305]:
+            - link "Image Transformer" [ref=e306] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/1802.05751
+          - listitem [ref=e307]:
+            - link "Training Tips for the Transformer Model" [ref=e308] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/1804.00247
+          - listitem [ref=e309]:
+            - link "Self-Attention with Relative Position Representations" [ref=e310] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/1803.02155
+          - listitem [ref=e311]:
+            - link "Fast Decoding in Sequence Models using Discrete Latent Variables" [ref=e312] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/1803.03382
+          - listitem [ref=e313]:
+            - 'link "Adafactor: Adaptive Learning Rates with Sublinear Memory Cost" [ref=e314] [cursor=pointer]':
+              - /url: https://arxiv.org/abs/1804.04235
+        - heading "Acknowledgements" [level=2] [ref=e315]
+        - paragraph [ref=e316]:
+          - text: Thanks to
+          - link "Illia Polosukhin" [ref=e317] [cursor=pointer]:
+            - /url: https://twitter.com/ilblackdragon
+          - text: ","
+          - link "Jakob Uszkoreit" [ref=e318] [cursor=pointer]:
+            - /url: http://jakob.uszkoreit.net/
+          - text: ","
+          - link "Llion Jones" [ref=e319] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/llion-jones-9ab3064b
+          - text: ","
+          - link "Lukasz Kaiser" [ref=e320] [cursor=pointer]:
+            - /url: https://ai.google/research/people/LukaszKaiser
+          - text: ","
+          - link "Niki Parmar" [ref=e321] [cursor=pointer]:
+            - /url: https://twitter.com/nikiparmar09
+          - text: ", and"
+          - link "Noam Shazeer" [ref=e322] [cursor=pointer]:
+            - /url: https://dblp.org/pers/hd/s/Shazeer:Noam
+          - text: for providing feedback on earlier versions of this post.
+        - paragraph [ref=e323]:
+          - text: Please hit me up on
+          - link "Twitter" [ref=e324] [cursor=pointer]:
+            - /url: https://twitter.com/JayAlammar
+          - text: for any corrections or feedback.
+      - generic [ref=e325]: Written on June 27, 2018
+  - iframe [ref=e327]:
+    - generic [ref=f2e2]:
+      - iframe
+      - generic [ref=f2e4]:
+        - generic [ref=f2e5]:
+          - link "Logo" [ref=f2e6] [cursor=pointer]:
+            - /url: https://newsletter.languagemodels.co/
+            - img "Logo" [ref=f2e7]
+          - heading "Language Models & Co." [level=1] [ref=f2e8]:
+            - link "Language Models & Co." [ref=f2e9] [cursor=pointer]:
+              - /url: https://newsletter.languagemodels.co/
+          - paragraph [ref=f2e10]: Large language models, their internals, and applications.
+          - generic [ref=f2e12]:
+            - generic [ref=f2e13]: By Jay Alammar
+            - text: · Over 33,000 subscribers
+          - generic [ref=f2e18]:
+            - textbox "Type your email..." [ref=f2e21]
+            - button "Subscribe" [disabled] [ref=f2e22]
+          - generic [ref=f2e24]:
+            - text: By subscribing you agree to
+            - link "Substack's Terms of Use" [ref=f2e25] [cursor=pointer]:
+              - /url: https://newsletter.languagemodels.co/tos?utm_source=embed_publication
+            - text: ","
+            - link "our Privacy Policy" [ref=f2e26] [cursor=pointer]:
+              - /url: https://newsletter.languagemodels.co/privacy?utm_source=embed_publication
+            - text: and
+            - link "our Information collection notice" [ref=f2e27] [cursor=pointer]:
+              - /url: https://substack.com/ccpa?utm_source=embed_publication#personal-data-collected
+        - link "Substack":
+          - /url: https://substack.com/?utm_source=embed&utm_content=jayalammar
+          - img "Substack" [ref=f2e28] [cursor=pointer]
+      - region "Notifications (F8)":
+        - list
+  - generic [ref=e328]:
+    - link "Creative Commons License" [ref=e329] [cursor=pointer]:
+      - /url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+      - img "Creative Commons License" [ref=e330]
+    - text: This work is licensed under a
+    - link "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" [ref=e331] [cursor=pointer]:
+      - /url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+    - text: .
+    - text: "Attribution example:"
+    - generic [ref=e332]:
+      - text: Alammar, J (2018). The Illustrated Transformer [Blog post]. Retrieved from
+      - link "https://jalammar.github.io/illustrated-transformer/" [ref=e333] [cursor=pointer]:
+        - /url: https://jalammar.github.io/illustrated-transformer/
+    - text: "Note: If you translate any of the posts, let me know so I can link your translation to the original post. My email is in the"
+    - link "about page" [ref=e334] [cursor=pointer]:
+      - /url: /about
+    - text: .
+  - contentinfo [ref=e337]:
+    - link [ref=e338] [cursor=pointer]:
+      - /url: https://github.com/jalammar
+    - link [ref=e340] [cursor=pointer]:
+      - /url: https://www.linkedin.com/in/jalammar
+    - link [ref=e342] [cursor=pointer]:
+      - /url: https://www.twitter.com/jayalammar

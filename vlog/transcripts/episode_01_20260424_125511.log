@@ -1,0 +1,18 @@
+Script started on 2026-04-24 12:55:11-04:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="182" LINES="10"]
+[?2004hrichard@big-powerful-desktop:~/Documents/personal_projects/portfolio$ [7m# kill the running vite process and restart[27m
+[7mnpx vite[27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C# kill the running vite process and restart
+npx vite
+[A
+[?2004l[1G[0K⠙[1G[0KPort 5173 is in use, trying another one...
+
+  [32m[1mVITE[22m v6.4.1[39m  [2mready in [0m[1m285[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5174[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+^C
+[?2004hrichard@big-powerful-desktop:~/Documents/personal_projects/portfolio$ exit
+[?2004lexit
+
+Script done on 2026-04-24 16:50:38-04:00 [COMMAND_EXIT_CODE="130"]
