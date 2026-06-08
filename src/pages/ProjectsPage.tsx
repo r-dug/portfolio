@@ -89,6 +89,15 @@ const PROJECTS: Project[] = [
     tech: ['Stable Diffusion 3.5', 'PyTorch', 'Python', 'Human Evaluation'],
     highlight: 'Benchmarked 4x4 protection/attack matrix on SD3.5',
   },
+  {
+    slug: 'farmers-markets',
+    name: 'Louisville Farmers Markets',
+    tagline: 'Local data guide',
+    description:
+      'A browsable 2026 guide to 16 Louisville-area farmers markets — schedules, seasons, vendor lists, and maps. Built from a multi-agent verification sweep across market sites and aggregators, plus logged-in scraping of weekly vendor lineups, then compiled into an importable calendar and Google Maps data.',
+    tech: ['React 19', 'TypeScript', 'Multi-agent research', 'Web scraping', 'iCalendar'],
+    highlight: '16 markets, 200+ vendors, downloadable .ics calendar and Google My Maps CSV',
+  },
 ]
 
 export function ProjectsPage() {

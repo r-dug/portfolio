@@ -1,0 +1,302 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Louisville Farmers Markets 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Louisville Farmers Markets 2026
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:lou-fm-2026-001@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260103T100000
+DTEND;TZID=America/New_York:20260103T120000
+RRULE:FREQ=WEEKLY;UNTIL=20260331T235959Z
+SUMMARY:Bardstown Road Farmers Market
+LOCATION:1722 Bardstown Rd\, Louisville\, KY
+DESCRIPTION:Year-round market (winter hours). Accepts SNAP plus credit/debi
+ t. ~30 vendors: produce\, cut flowers\, plants\, pastured meats\, cheese\,
+  eggs\, baked goods\, prepared foods\, honey\, jams. Two adjacent location
+ s (1722 & 1733 Bardstown Rd).\nMore info / vendor list: https://www.bardst
+ ownroadfarmersmarket.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-002@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260404T090000
+DTEND;TZID=America/New_York:20260404T120000
+RRULE:FREQ=WEEKLY;UNTIL=20261130T235959Z
+SUMMARY:Bardstown Road Farmers Market
+LOCATION:1722 Bardstown Rd\, Louisville\, KY
+DESCRIPTION:Year-round market (spring/summer/fall hours). Accepts SNAP plus
+  credit/debit. ~30 vendors: produce\, cut flowers\, plants\, pastured meat
+ s\, cheese\, eggs\, baked goods\, prepared foods\, honey\, jams. Two adjac
+ ent locations (1722 & 1733 Bardstown Rd).\nMore info / vendor list: https:
+ //www.bardstownroadfarmersmarket.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-003@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20261205T100000
+DTEND;TZID=America/New_York:20261205T120000
+RRULE:FREQ=WEEKLY;UNTIL=20261231T235959Z
+SUMMARY:Bardstown Road Farmers Market
+LOCATION:1722 Bardstown Rd\, Louisville\, KY
+DESCRIPTION:Year-round market (winter hours). Accepts SNAP plus credit/debi
+ t. ~30 vendors: produce\, cut flowers\, plants\, pastured meats\, cheese\,
+  eggs\, baked goods\, prepared foods\, honey\, jams. Two adjacent location
+ s (1722 & 1733 Bardstown Rd).\nMore info / vendor list: https://www.bardst
+ ownroadfarmersmarket.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-004@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260105T150000
+DTEND;TZID=America/New_York:20260105T190000
+RRULE:FREQ=WEEKLY;UNTIL=20261231T235959Z
+SUMMARY:Beulah Church Farmers' Market (outdoor)
+LOCATION:6704 Bardstown Road\, Louisville\, KY
+DESCRIPTION:Year-round\, outdoor (Beulah Presbyterian Church lot). Sells pr
+ oduce\, meats\, baked goods\, eggs\, honey\, jams\, crafts. Moves indoors 
+ in winter.\nMore info / vendor list: https://www.facebook.com/people/Beula
+ h-Church-Farmers-Market-Fern-Creek-KY/100037660703524/
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-005@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20261121T100000
+DTEND;TZID=America/New_York:20261121T130000
+RRULE:FREQ=WEEKLY;UNTIL=20261231T235959Z
+SUMMARY:Beulah Church Farmers' Market (indoor)
+LOCATION:6704 Bardstown Road\, Louisville\, KY
+DESCRIPTION:Indoor winter session (Ramsey Building behind the church)\, Sat
+ urdays 10am-1pm starting mid/late November. Same vendor mix as the outdoor
+  Monday market.\nMore info / vendor list: https://www.facebook.com/people/
+ Beulah-Church-Farmers-Market-Fern-Creek-KY/100037660703524/
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-006@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260604T150000
+DTEND;TZID=America/New_York:20260604T180000
+RRULE:FREQ=WEEKLY;UNTIL=20261029T235959Z
+SUMMARY:Crescent Hill Farmers Market
+LOCATION:201 S Peterson Ave\, Louisville\, KY
+DESCRIPTION:Season: June 4 - Oct 29 (Crescent Hill United Methodist Church)
+ . Sells produce\, meats\, flowers\, baked goods\, coffee\, soaps.\nMore in
+ fo / vendor list: https://www.facebook.com/crescenthillfarmersmarketlou
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-007@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260404T100000
+DTEND;TZID=America/New_York:20260404T140000
+RRULE:FREQ=WEEKLY;UNTIL=20261219T235959Z
+SUMMARY:Douglass Loop Farmers Market
+LOCATION:2005 Douglass Blvd\, Louisville\, KY
+DESCRIPTION:Season: Apr 4 - Dec 19. Outdoor (church parking lot). Live musi
+ c\; produce\, honey\, plants\, cheese\, meats\, breads\, prepared/multi-et
+ hnic foods\, arts & crafts.\nMore info / vendor list: https://www.douglass
+ loopfarmersmarket.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-008@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260207T090000
+DTEND;TZID=America/New_York:20260207T140000
+RRULE:FREQ=WEEKLY;UNTIL=20261031T235959Z
+SUMMARY:East End Farmers Market
+LOCATION:13060 Factory Lane\, Louisville\, KY
+DESCRIPTION:Saturday market\, season Feb 7 - Oct 31 (a separate winter mark
+ et follows). Free admission & parking\; outdoor\, rain or shine. Across fr
+ om Forest Springs Kroger.\nMore info / vendor list: https://www.eastendfm.
+ com/p/blog-page.html
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-009@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260210T140000
+DTEND;TZID=America/New_York:20260210T180000
+RRULE:FREQ=WEEKLY;UNTIL=20261031T235959Z
+SUMMARY:East End Farmers Market
+LOCATION:13060 Factory Lane\, Louisville\, KY
+DESCRIPTION:Tuesday market. NOTE: Tuesday season may be shorter than Saturd
+ ay (one source says ~Apr-Aug only) - confirm. Free admission & parking\; o
+ utdoor.\nMore info / vendor list: https://www.eastendfm.com/p/blog-page.ht
+ ml
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-010@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260516T080000
+DTEND;TZID=America/New_York:20260516T120000
+RRULE:FREQ=WEEKLY;UNTIL=20260927T235959Z
+SUMMARY:Eastwood Village Farmers Market
+LOCATION:15201 Shelbyville Rd\, Louisville\, KY
+DESCRIPTION:Season: May 10 - Sept 27. Greenhouse parking lot of Highview Ba
+ ptist Church. Live music\; organic produce\, meats\, cheeses\, eggs\, flow
+ ers\, baked goods\, crafts.\nMore info / vendor list: https://www.eastwood
+ farmers.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-011@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260604T103000
+DTEND;TZID=America/New_York:20260604T133000
+RRULE:FREQ=WEEKLY;UNTIL=20260924T235959Z
+SUMMARY:Gray Street Farmers' Market
+LOCATION:316 E Chestnut St\, Louisville\, KY 40202
+DESCRIPTION:Season: June 4 - Sept 24\, at the new LOUMED Commons. Rain or s
+ hine. Accepts SNAP with Double Dollars (matches up to $20/wk\; TRIPLED the
+  first Thursday of each month). Senior FMNP (age 60+). Produce\, meat\, br
+ eads\, honey\, herbs.\nMore info / vendor list: https://publichealth.louis
+ ville.edu/community-partnerships/gray-street-farmers-market
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-012@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260425T080000
+DTEND;TZID=America/New_York:20260425T120000
+RRULE:FREQ=WEEKLY;UNTIL=20261024T235959Z
+SUMMARY:Jeffersontown Farmers Market
+LOCATION:10434 Watterson Trail\, Jeffersontown\, KY
+DESCRIPTION:Season: Apr 25 - Oct 24. Under the covered Gaslight Square Pavi
+ lion. City-run\; 25+ vendors - produce\, baked goods\, meats.\nMore info /
+  vendor list: https://www.facebook.com/JeffersontownFarmersMarket/
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-013@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260426T120000
+DTEND;TZID=America/New_York:20260426T150000
+RRULE:FREQ=WEEKLY;UNTIL=20261101T235959Z
+SUMMARY:Norton Commons Farmers Market
+LOCATION:6301 Moonseed Street\, Prospect\, KY
+DESCRIPTION:Season: Apr 26 - Nov 1. North Village area\; described as 'more
+  of a festival than a market.' Free parking.\nMore info / vendor list: htt
+ ps://www.facebook.com/NortonCommonsFarmersMarket/
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-014@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260516T090000
+DTEND;TZID=America/New_York:20260516T123000
+RDATE;TZID=America/New_York:20260530T090000,20260613T090000,20260627T090000
+ ,20260711T090000,20260725T090000,20260808T090000,20260822T090000,20260905T
+ 090000,20260919T090000,20261017T090000,20261031T090000,20261114T090000
+SUMMARY:Old Louisville Farmer's Market
+LOCATION:Central Park (6th St & Park Ave)\, Louisville\, KY
+DESCRIPTION:Select alternating Saturdays (May-Nov). NEW 2026 location: move
+ d to Central Park. Accepts EBT/SNAP + Kentucky Double Dollars\; live music
+ \; shaded picnic tables & splash pad.\nMore info / vendor list: https://ww
+ w.oldloufarmersmarket.com/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-015@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260930T173000
+DTEND;TZID=America/New_York:20260930T210000
+SUMMARY:Old Louisville Farmer's Market - Night Market
+LOCATION:Central Park (6th St & Park Ave)\, Louisville\, KY
+DESCRIPTION:Special Wednesday evening Night Market at Central Park. Accepts
+  EBT/SNAP + Kentucky Double Dollars\; live music.\nMore info / vendor list
+ : https://www.oldloufarmersmarket.com/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-016@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260526T150000
+DTEND;TZID=America/New_York:20260526T180000
+RRULE:FREQ=WEEKLY;UNTIL=20261028T235959Z
+SUMMARY:Phoenix Hill NuLu Farmer's Market
+LOCATION:1007 E Jefferson St\, Louisville\, KY
+DESCRIPTION:Season UNCONFIRMED for 2026 (no official dates posted yet\; agg
+ regators say ~mid-Apr to mid-Nov). Verify before relying. Accepts cash/cre
+ dit/debit/SNAP/Senior FM cards. By Phoenix Hill Neighborhood Assoc & Fresh
+  Start Growers' Supply.\nMore info / vendor list: https://phoenixhillnuluf
+ armersmarket.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-017@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260510T120000
+DTEND;TZID=America/New_York:20260510T160000
+RRULE:FREQ=WEEKLY;UNTIL=20261122T235959Z
+SUMMARY:Rainbow Blossom Farmers Market
+LOCATION:3738 Lexington Rd\, Louisville\, KY 40207
+DESCRIPTION:Season: May 10 - Nov 22. ~23 vendors: just-picked produce\, org
+ anic meats\, eggs\, baked goods\, preserves\, ready-to-eat items\, crafts.
+  (Reportedly does NOT accept SNAP/EBT - unconfirmed.)\nMore info / vendor 
+ list: https://www.rainbowblossom.com/farmers-market
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-018@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260607T100000
+DTEND;TZID=America/New_York:20260607T130000
+RRULE:FREQ=WEEKLY;UNTIL=20260927T235959Z
+EXDATE;TZID=America/New_York:20260906T100000
+SUMMARY:Riverside Farmers Market
+LOCATION:7410 Moorman Road\, Louisville\, KY
+DESCRIPTION:Season: June 7 - Sept 27 (CLOSED Sun Sept 6 for Labor Day). At 
+ historic Farnsley-Moremen Landing\, outdoor pavilion near the Visitors' Ce
+ nter. Produce + crafts\; often workshops\, demos\, live entertainment. (Te
+ ntative extra: Sat July 11 evening market 5-8pm.)\nMore info / vendor list
+ : https://riverside-landing.org/2026-riverside-farmers-market/
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-019@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260509T080000
+DTEND;TZID=America/New_York:20260509T120000
+RRULE:FREQ=WEEKLY;UNTIL=20260926T235959Z
+SUMMARY:Saint Matthews Farmers Market
+LOCATION:4100 Shelbyville Rd\, Louisville\, KY
+DESCRIPTION:Season: May 9 - Sept 26 (20th season). Beargrass Christian Chur
+ ch lot. 40+ farms/vendors - produce\, baked goods\, honey\, meat\, cheese\
+ , eggs\, flowers\, crafts\; hot breakfast. Live music weekly\; kids activi
+ ties.\nMore info / vendor list: https://smfarmersmarket.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-020@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260606T100000
+DTEND;TZID=America/New_York:20260606T140000
+RDATE;TZID=America/New_York:20260620T100000,20260704T100000,20260718T100000
+ ,20260801T100000,20260815T100000,20260829T100000,20260912T100000,20260926T
+ 100000,20261010T100000,20261024T100000
+SUMMARY:Shively Farmers & Artisans Market
+LOCATION:2900 Ralph Ave\, Louisville\, KY
+DESCRIPTION:Select alternating Saturdays (June-Oct). At Vision of Hope Chur
+ ch\; city-run. Farm produce plus artisan/craft vendors.\nMore info / vendo
+ r list: https://www.facebook.com/shivelyfarmersmarketky
+END:VEVENT
+BEGIN:VEVENT
+UID:lou-fm-2026-021@alltreeroots
+DTSTAMP:20260608T000000Z
+DTSTART;TZID=America/New_York:20260425T090000
+DTEND;TZID=America/New_York:20260425T130000
+RRULE:FREQ=WEEKLY;UNTIL=20261024T235959Z
+SUMMARY:Westport Road Baptist Farmers Market
+LOCATION:9707 Westport Rd\, Louisville\, KY
+DESCRIPTION:Season: Apr 25 - Oct 24 (start date varies across listings - co
+ nfirm). Westport Road Baptist Church lot\, outdoor. Farmers\, craft vendor
+ s\, prepared meals.\nMore info / vendor list: https://www.facebook.com/wes
+ tportrdbaptistfarmersmarket/
+END:VEVENT
+END:VCALENDAR
