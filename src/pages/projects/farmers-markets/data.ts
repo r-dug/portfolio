@@ -64,7 +64,7 @@ export const MARKETS: Market[] = [
     vendors: [
       { name: 'Pure Pollen Flowers', url: 'https://purepollenflowers.com' },
       { name: 'Facing West Farm', url: 'http://www.localharvest.org/farms/M25390' },
-      { name: 'Wild Carrot Farm', url: 'http://www.wildcarrotfarmky.com/' },
+      { name: 'Wild Carrot Farm' },
       { name: "Thieneman's Greenhouse", url: 'http://www.thienemans.com/' },
       { name: 'Red Clover', url: 'http://rootedredclover.com/' },
       { name: 'Happy Jack Pumpkin & Produce', url: 'https://www.facebook.com/pages/Happy-Jacks-Pumpkin-Farm/121260991222702' },
@@ -159,7 +159,7 @@ export const MARKETS: Market[] = [
       { name: 'The Herb Shack', url: 'https://www.theherbshack.com/' },
       { name: 'Above The Dirt', url: 'https://www.abovethedirtgardenshop.com/' },
       { name: 'Among the Oaks Herb Farm', url: 'https://amongtheoaksfarmstead.com/' },
-      { name: 'Urban Microgreens', url: 'https://www.urbanmicrogreensky.com/' },
+      { name: 'Urban Microgreens' },
       { name: 'Fresh Air A&A', url: 'https://www.facebook.com/freshairana' },
       { name: 'Honeybear Farms KY', url: 'https://www.honeybearfarmsky.com/' },
       { name: 'Red Hot Roasters', url: 'https://redhotroasters.com/' },
@@ -550,6 +550,7 @@ const VENDOR_CATEGORIES = vendorCategories as Record<string, string[]>
 /** Master list of vendor categories, in display order for filter chips. */
 export const ALL_CATEGORIES = [
   'Produce',
+  'Mushrooms',
   'Meat & eggs',
   'Dairy & cheese',
   'Baked goods',
