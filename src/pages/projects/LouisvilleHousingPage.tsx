@@ -14,7 +14,7 @@ export function LouisvilleHousingPage() {
       ]}
       heroEmbed={{
         // bump ?v= when the map data refreshes so returning visitors bypass cache
-        src: '/louisville-housing/map.html?v=2026-07-04b',
+        src: '/louisville-housing/map.html?v=2026-07-04c',
         title: 'Louisville Housing Projections — interactive map',
         height: 640,
         caption:
@@ -31,7 +31,7 @@ export function LouisvilleHousingPage() {
               point: '**Plain-English metrics.** Cap rate = the annual rental profit you would keep, after typical operating costs, as a percentage of the property value — the rental investor’s yield. Gross rent multiplier = how many years of rent it takes to equal the purchase price — lower means rents pay the price back faster.',
             },
             {
-              point: '**Confidence you can act on.** Every horizon shows its empirically measured accuracy — from replaying the production models at 35 historical dates and scoring them against what actually happened. One-year projections: half land within ±2.8 points of realized appreciation. Ten-year projections: within ±28.6 points — direction and ranking, not precision. The map says so on its face.',
+              point: '**Confidence you can act on.** Every projection carries a per-area 80% range from quantile models, conformally calibrated against 21k+ historical forecasts (out-of-time coverage 87–96%). One-year appreciation: typical error ±2.8 points. Ten-year: ±28.7 — direction and ranking, not precision. Layers without backtest evidence say so explicitly instead of showing a number.',
             },
             {
               point: '**Assumptions on the label.** Every number’s recipe — the area-varying operating-expense model, how rents are estimated, where boundaries are approximate — is one click away in the map’s methodology panel, and each tooltip shows the expense ratio assumed for that area.',
@@ -48,7 +48,7 @@ export function LouisvilleHousingPage() {
               point: '**Louisville splits into a yield market and a growth market.** West-end neighborhoods (Shawnee, Algonquin, Chickasaw, Park Hill, Park DuValle) offer projected cap rates approaching 9% — roughly triple the yields in the east end, where prices are high relative to rents. That premium is compensation for real risk: older housing stock, higher vacancy and collection risk, and thinner resale markets.',
             },
             {
-              point: '**The composite score favors the value corridor.** Top 5-year scores: Hallmark (99), South Louisville (91), Edgewood (90), Shawnee (89), Lynnview (89) — areas pairing above-median projected appreciation with strong rental yields. The score is a screen, not advice: it deliberately has no risk adjustment, so high-yield areas rank high.',
+              point: '**The value corridor leads on total return.** The map's headline aggregate is unlevered total return — projected appreciation plus net rental yield, in plain %/yr with no weighting choices. Five-year leaders: Hallmark (16.4%/yr), Shawnee (13.0%), Edgewood (12.7%) — each with its uncertainty range shown. A percentile-based investment score is also available, with the component weights set by you (growth vs cash-flow presets or custom sliders), not baked in.',
             },
             {
               point: '**Long-run trajectory: +45% median over ten years** (~3.8%/yr), with the strongest trend areas (Smoketown-Jackson, West Buechel) projecting to more than double. Ten-year figures are trend extrapolations — treat them as direction, not precision.',
