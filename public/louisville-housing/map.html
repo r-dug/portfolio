@@ -19,7 +19,14 @@
     background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
     padding: 12px 14px; width: 290px; box-shadow: 0 2px 10px rgba(0,0,0,.12);
   }
+  .phead { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
   .panel h1 { font-size: 15px; margin: 0 0 2px; }
+  #ptoggle { border: 1px solid var(--line); background: var(--surface); color: var(--ink-2);
+             border-radius: 5px; cursor: pointer; font-size: 10px; line-height: 1;
+             padding: 4px 7px; flex: none; }
+  #ptoggle:hover { color: var(--ink); }
+  .panel.collapsed .pbody { display: none; }
+  .panel.collapsed { width: auto; }
   .panel .sub { color: var(--ink-2); font-size: 12px; margin-bottom: 10px; }
   .row { display: flex; gap: 8px; margin-bottom: 8px; align-items: center; }
   .row label { font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
@@ -53,8 +60,12 @@
 </head>
 <body>
 <div id="map"></div>
-<div class="panel">
-  <h1>Louisville Housing Projections</h1>
+<div class="panel" id="panel">
+  <div class="phead">
+    <h1>Louisville Housing Projections</h1>
+    <button id="ptoggle" aria-label="Collapse panel" title="Collapse/expand">&#9650;</button>
+  </div>
+  <div class="pbody" id="pbody">
   <div class="sub">Model projections as of 2026-05-31 · Jefferson County KY</div>
   <div class="row"><label for="metric">Layer</label><select id="metric"></select></div>
   <div class="row"><label for="horizon">Horizon</label>
@@ -70,6 +81,7 @@
   <div class="legend"><div class="swatches" id="sw"></div><div class="lab" id="swlab"></div></div>
   <div class="conf" id="conf"></div>
   <div class="note">Gray = no data (rent coverage). <a onclick="method(true)">Methodology &amp; assumptions</a></div>
+  </div>
 </div>
 
 <div id="method">
@@ -122,6 +134,8 @@ const ZIPS = {"type": "FeatureCollection", "features": [{"id": "13", "type": "Fe
 const map = L.map('map', {zoomControl: true}).setView([38.19, -85.65], 11);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors', maxZoom: 17, opacity: 0.55,
+  // CORS mode so tiles satisfy COEP (cross-origin-isolated embedding pages)
+  crossOrigin: 'anonymous',
 }).addTo(map);
 
 const metricSel = document.getElementById('metric');
@@ -218,6 +232,18 @@ function method(show) {
 
 for (const id of ['metric', 'horizon', 'res'])
   document.getElementById(id).addEventListener('change', redraw);
+
+const panel = document.getElementById('panel');
+const ptoggle = document.getElementById('ptoggle');
+function setCollapsed(c) {
+  panel.classList.toggle('collapsed', c);
+  ptoggle.innerHTML = c ? '&#9660;' : '&#9650;';
+  ptoggle.setAttribute('aria-label', c ? 'Expand panel' : 'Collapse panel');
+}
+ptoggle.addEventListener('click', () => setCollapsed(!panel.classList.contains('collapsed')));
+// space is tight when embedded; start collapsed inside iframes
+if (window.self !== window.top) setCollapsed(true);
+
 redraw();
 </script>
 </body>

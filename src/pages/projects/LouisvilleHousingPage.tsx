@@ -12,18 +12,14 @@ export function LouisvilleHousingPage() {
         'pandas', 'GeoPandas', 'Leaflet', 'Zillow Research', 'FRED',
         'Census/ACS', 'HUD', 'Redfin',
       ]}
-      heroCarousel={[
-        {
-          src: '/images/louisville-housing/map-appreciation-1yr.png',
-          alt: '1-year appreciation projection map',
-          caption: 'Projected 1-year price change by neighborhood — blue appreciating, red declining',
-        },
-        {
-          src: '/images/louisville-housing/map-score-5yr.png',
-          alt: '5-year investment score map',
-          caption: 'Composite 5-year investment score — growth, rental yield, and price-to-rent blended',
-        },
-      ]}
+      heroEmbed={{
+        // bump ?v= when the map data refreshes so returning visitors bypass cache
+        src: '/louisville-housing/map.html?v=2026-07-04',
+        title: 'Louisville Housing Projections — interactive map',
+        height: 640,
+        caption:
+          'Live map — pick a layer, horizon, and area level; hover any neighborhood for its full investment profile. Best experienced fullscreen via the Live Demo link above.',
+      }}
       sections={[
         {
           heading: 'What an Investor Sees',

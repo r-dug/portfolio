@@ -39,6 +39,8 @@ interface ProjectPageProps {
   metrics?: MetricGroup[]
   heroImage?: CarouselImage
   heroCarousel?: CarouselImage[]
+  /** Live interactive embed shown as the hero (takes precedence over images) */
+  heroEmbed?: { src: string; title: string; height?: number; caption?: string }
 }
 
 /**
@@ -104,6 +106,7 @@ export function ProjectPage({
   metrics,
   heroImage,
   heroCarousel,
+  heroEmbed,
 }: ProjectPageProps) {
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
@@ -161,8 +164,24 @@ export function ProjectPage({
       </div>
 
       {/* hero image or carousel */}
-      {heroCarousel && <ImageCarousel images={heroCarousel} className="mb-10" />}
-      {heroImage && !heroCarousel && <ProjectImage {...heroImage} className="mb-10" />}
+      {heroEmbed && (
+        <figure className="mb-10">
+          <iframe
+            src={heroEmbed.src}
+            title={heroEmbed.title}
+            loading="lazy"
+            className="w-full rounded-xl border border-[hsl(var(--border))] shadow-sm"
+            style={{ height: heroEmbed.height ?? 620 }}
+          />
+          {heroEmbed.caption && (
+            <figcaption className="mt-2 text-sm text-[hsl(var(--muted-foreground))]">
+              {heroEmbed.caption}
+            </figcaption>
+          )}
+        </figure>
+      )}
+      {heroCarousel && !heroEmbed && <ImageCarousel images={heroCarousel} className="mb-10" />}
+      {heroImage && !heroCarousel && !heroEmbed && <ProjectImage {...heroImage} className="mb-10" />}
 
       {/* content sections */}
       <div className="space-y-10">
