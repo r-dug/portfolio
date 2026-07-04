@@ -48,7 +48,7 @@ export function LouisvilleHousingPage() {
               point: '**Louisville splits into a yield market and a growth market.** West-end neighborhoods (Shawnee, Algonquin, Chickasaw, Park Hill, Park DuValle) offer projected cap rates approaching 9% — roughly triple the yields in the east end, where prices are high relative to rents. That premium is compensation for real risk: older housing stock, higher vacancy and collection risk, and thinner resale markets.',
             },
             {
-              point: '**The value corridor leads on total return.** The map's headline aggregate is unlevered total return — projected appreciation plus net rental yield, in plain %/yr with no weighting choices. Five-year leaders: Hallmark (16.4%/yr), Shawnee (13.0%), Edgewood (12.7%) — each with its uncertainty range shown. A percentile-based investment score is also available, with the component weights set by you (growth vs cash-flow presets or custom sliders), not baked in.',
+              point: '**The value corridor leads on total return.** The map’s headline aggregate is unlevered total return — projected appreciation plus net rental yield, in plain %/yr with no weighting choices. Five-year leaders: Hallmark (16.4%/yr), Shawnee (13.0%), Edgewood (12.7%) — each with its uncertainty range shown. A percentile-based investment score is also available, with the component weights set by you (growth vs cash-flow presets or custom sliders), not baked in.',
             },
             {
               point: '**Long-run trajectory: +45% median over ten years** (~3.8%/yr), with the strongest trend areas (Smoketown-Jackson, West Buechel) projecting to more than double. Ten-year figures are trend extrapolations — treat them as direction, not precision.',
