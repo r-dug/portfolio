@@ -14,7 +14,7 @@ export function LouisvilleHousingPage() {
       ]}
       heroEmbed={{
         // bump ?v= when the map data refreshes so returning visitors bypass cache
-        src: '/louisville-housing/map.html?v=2026-07-04',
+        src: '/louisville-housing/map.html?v=2026-07-04b',
         title: 'Louisville Housing Projections — interactive map',
         height: 640,
         caption:
@@ -34,7 +34,7 @@ export function LouisvilleHousingPage() {
               point: '**Confidence you can act on.** Every horizon shows its empirically measured accuracy — from replaying the production models at 35 historical dates and scoring them against what actually happened. One-year projections: half land within ±2.8 points of realized appreciation. Ten-year projections: within ±28.6 points — direction and ranking, not precision. The map says so on its face.',
             },
             {
-              point: '**Assumptions on the label.** Every number’s recipe — the 40% operating-expense assumption, how rents are estimated, where boundaries are approximate — is one click away in the map’s methodology panel.',
+              point: '**Assumptions on the label.** Every number’s recipe — the area-varying operating-expense model, how rents are estimated, where boundaries are approximate — is one click away in the map’s methodology panel, and each tooltip shows the expense ratio assumed for that area.',
             },
           ],
         },
@@ -105,7 +105,7 @@ export function LouisvilleHousingPage() {
               point: '**Rent data is young.** ZIP-level market rents exist only since ~2016, and 53 of 219 areas lack rent coverage entirely (shown gray). Neighborhood rents are estimated from surrounding ZIPs, never observed directly.',
             },
             {
-              point: '**The expense assumption is flat.** Net operating income assumes 40% of rent goes to taxes, insurance, maintenance, management, and vacancy everywhere. High-yield areas in practice carry higher expense ratios — their true cap rates are lower than the map’s.',
+              point: '**Expenses are modeled, not observed.** Net operating income uses an area-varying expense ratio (39–65%, median ~47%) built from Census housing-stock age, area vacancy rates, and value-proportional taxes and insurance. It captures systematic differences between areas, but any individual property’s costs can differ substantially from its area’s assumption.',
             },
             {
               point: '**The training era had no completed bust.** Models learned mostly from 2012–2026, a long expansion. A 2008-style downturn would degrade every model here — the long-horizon numbers especially.',
