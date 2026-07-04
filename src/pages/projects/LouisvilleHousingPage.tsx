@@ -64,7 +64,7 @@ export function LouisvilleHousingPage() {
             {
               point: '**Rewind-and-test discipline.** Every candidate method was evaluated by rolling the clock back (35 forecast dates, 2008–2025), forecasting forward with only the data available at that moment, and scoring against what actually happened — 21,841 scored forecasts per model. Nothing ships unless it beats the “prices don’t change” baseline.',
               sub: [
-                'Six model families competed: gradient-boosted trees, an LSTM neural network, ARIMA, exponential smoothing, and simple trend baselines',
+                'Seven model families competed: gradient-boosted trees, an LSTM neural network, Amazon\u2019s Chronos-2 pretrained time-series transformer (zero-shot), ARIMA, exponential smoothing, and simple trend baselines',
                 'Statistical significance checked with Diebold-Mariano tests',
               ],
             },
@@ -72,7 +72,7 @@ export function LouisvilleHousingPage() {
               point: '**Different horizons, different physics.** Housing markets have momentum over 1–2 years and revert to trend beyond that — a pattern from the academic literature that Louisville’s data reproduces. So short horizons use machine learning on momentum, inventory, days-on-market, price cuts, mortgage rates, and local employment; long horizons use each area’s own long-run trend, because 18 years of backtesting says that’s what stays reliable.',
             },
             {
-              point: '**The neural network lost fair and square.** The LSTM was diagnosed (training curves, epoch sweeps, feature ablations) and dropped: at ~200 areas of monthly data, it could not beat gradient-boosted trees — matching the latest published benchmark on ZIP-level housing data (HouseTS, 2026).',
+              point: '**The neural networks lost fair and square.** The LSTM was diagnosed (training curves, epoch sweeps, feature ablations) and dropped: at ~200 areas of monthly data, it could not beat gradient-boosted trees. A pretrained transformer (Chronos-2, run zero-shot) beat the trained LSTM at every horizon without any training — but still lost to the simpler engine. Both results match the latest published benchmark on ZIP-level housing data (HouseTS, 2026).',
               sub: [
                 'Best 1-year forecaster: pooled XGBoost — 32% more accurate than the no-change baseline',
                 '10-year projections: each area’s long-run trend — 38% more accurate than no-change',
