@@ -13,6 +13,7 @@ import { FungusClassifierPage } from '@/pages/projects/FungusClassifierPage'
 import { FedLearningPage } from '@/pages/projects/FedLearningPage'
 import { StyleMimicryPage } from '@/pages/projects/StyleMimicryPage'
 import { GEPAJailbreaksPage } from '@/pages/projects/GEPAJailbreaksPage'
+import { LouisvilleHousingPage } from '@/pages/projects/LouisvilleHousingPage'
 import { FarmersMarketsPage } from '@/pages/projects/farmers-markets/FarmersMarketsPage'
 import { FarmersMarketDetailPage } from '@/pages/projects/farmers-markets/FarmersMarketDetailPage'
 import { Chatbot } from '@/components/Chatbot'
@@ -37,6 +38,7 @@ export default function App() {
             <Route path="/projects/federated-learning" element={<FedLearningPage />} />
             <Route path="/projects/style-mimicry"    element={<StyleMimicryPage />} />
             <Route path="/projects/gepa-jailbreaks"  element={<GEPAJailbreaksPage />} />
+            <Route path="/projects/louisville-housing" element={<LouisvilleHousingPage />} />
             <Route path="/projects/farmers-markets"  element={<FarmersMarketsPage />} />
             <Route path="/projects/farmers-markets/:slug" element={<FarmersMarketDetailPage />} />
             <Route path="*"                          element={<Navigate to="/" replace />} />

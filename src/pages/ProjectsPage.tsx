@@ -15,6 +15,16 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
+    slug: 'louisville-housing',
+    name: 'Louisville Housing Projections',
+    tagline: 'Real-estate forecasting + interactive investment map',
+    description:
+      'End-to-end forecasting system for the Louisville housing market: eight public data sources, a six-model bake-off validated on 21k+ backtested forecasts, and an interactive map projecting appreciation, rents, cap rates, and a composite investment score for all 128 neighborhoods at 1-10 year horizons \u2014 with empirical confidence bands on every projection.',
+    tech: ['Python', 'XGBoost', 'PyTorch', 'statsmodels', 'GeoPandas', 'Leaflet', 'Zillow/FRED/Census/HUD'],
+    liveUrl: '/louisville-housing/map.html',
+    highlight: 'Horizon-specific model engine beats the no-change baseline by 27-38% across 1-10 year forecasts',
+  },
+  {
     slug: 'tutorail',
     name: 'TutorAIL',
     tagline: 'Agentic learning platform',

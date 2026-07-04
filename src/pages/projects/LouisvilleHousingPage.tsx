@@ -1,0 +1,140 @@
+import { ProjectPage } from '@/components/ProjectPage'
+
+export function LouisvilleHousingPage() {
+  return (
+    <ProjectPage
+      name="Louisville Housing Projections"
+      tagline="Where does the data say to invest? An interactive forecast map of every Louisville neighborhood"
+      intro="A full data pipeline and model competition behind a simple deliverable: an interactive map that projects home values, rents, and investor returns for all 128 Louisville neighborhoods and every Jefferson County ZIP, at 1, 3, 5, and 10-year horizons. Every projection was stress-tested by rewinding history and checking whether the method would actually have worked."
+      liveUrl="/louisville-housing/map.html"
+      tech={[
+        'Python', 'XGBoost', 'PyTorch', 'statsmodels', 'scikit-learn',
+        'pandas', 'GeoPandas', 'Leaflet', 'Zillow Research', 'FRED',
+        'Census/ACS', 'HUD', 'Redfin',
+      ]}
+      heroCarousel={[
+        {
+          src: '/images/louisville-housing/map-appreciation-1yr.png',
+          alt: '1-year appreciation projection map',
+          caption: 'Projected 1-year price change by neighborhood — blue appreciating, red declining',
+        },
+        {
+          src: '/images/louisville-housing/map-score-5yr.png',
+          alt: '5-year investment score map',
+          caption: 'Composite 5-year investment score — growth, rental yield, and price-to-rent blended',
+        },
+      ]}
+      sections={[
+        {
+          heading: 'What an Investor Sees',
+          body: [
+            {
+              point: '**Seven layers, four time horizons, two zoom levels.** Pick a metric (projected appreciation, monthly rent, gross annual rent, net operating income, cap rate, gross rent multiplier, or a composite investment score), pick a horizon (1/3/5/10 years), and view it by neighborhood or ZIP. Hover any area for its full profile.',
+            },
+            {
+              point: '**Plain-English metrics.** Cap rate = the annual rental profit you would keep, after typical operating costs, as a percentage of the property value — the rental investor’s yield. Gross rent multiplier = how many years of rent it takes to equal the purchase price — lower means rents pay the price back faster.',
+            },
+            {
+              point: '**Confidence you can act on.** Every horizon shows its empirically measured accuracy — from replaying the production models at 35 historical dates and scoring them against what actually happened. One-year projections: half land within ±2.8 points of realized appreciation. Ten-year projections: within ±28.6 points — direction and ranking, not precision. The map says so on its face.',
+            },
+            {
+              point: '**Assumptions on the label.** Every number’s recipe — the 40% operating-expense assumption, how rents are estimated, where boundaries are approximate — is one click away in the map’s methodology panel.',
+            },
+          ],
+        },
+        {
+          heading: 'Key Findings (as of mid-2026)',
+          body: [
+            {
+              point: '**Near-term growth is modest and uneven.** The median Louisville area projects +1.8% over the next 12 months, but 21 of 219 areas project outright declines. The strongest near-term areas are urban-core neighborhoods with momentum: Smoketown-Jackson (+6.3%), Shawnee (+5.8%), and the 40212 corridor.',
+            },
+            {
+              point: '**Louisville splits into a yield market and a growth market.** West-end neighborhoods (Shawnee, Algonquin, Chickasaw, Park Hill, Park DuValle) offer projected cap rates approaching 9% — roughly triple the yields in the east end, where prices are high relative to rents. That premium is compensation for real risk: older housing stock, higher vacancy and collection risk, and thinner resale markets.',
+            },
+            {
+              point: '**The composite score favors the value corridor.** Top 5-year scores: Hallmark (99), South Louisville (91), Edgewood (90), Shawnee (89), Lynnview (89) — areas pairing above-median projected appreciation with strong rental yields. The score is a screen, not advice: it deliberately has no risk adjustment, so high-yield areas rank high.',
+            },
+            {
+              point: '**Long-run trajectory: +45% median over ten years** (~3.8%/yr), with the strongest trend areas (Smoketown-Jackson, West Buechel) projecting to more than double. Ten-year figures are trend extrapolations — treat them as direction, not precision.',
+            },
+            {
+              point: '**A disclosed disagreement:** Zillow’s own metro model calls the next 12 months flat (−0.1%); this system’s median area projection is +1.8%. The gap is documented rather than hidden — reasonable models disagree at turning points.',
+            },
+          ],
+        },
+        {
+          heading: 'How the Projections Are Made',
+          body: [
+            {
+              point: '**Rewind-and-test discipline.** Every candidate method was evaluated by rolling the clock back (35 forecast dates, 2008–2025), forecasting forward with only the data available at that moment, and scoring against what actually happened — 21,841 scored forecasts per model. Nothing ships unless it beats the “prices don’t change” baseline.',
+              sub: [
+                'Six model families competed: gradient-boosted trees, an LSTM neural network, ARIMA, exponential smoothing, and simple trend baselines',
+                'Statistical significance checked with Diebold-Mariano tests',
+              ],
+            },
+            {
+              point: '**Different horizons, different physics.** Housing markets have momentum over 1–2 years and revert to trend beyond that — a pattern from the academic literature that Louisville’s data reproduces. So short horizons use machine learning on momentum, inventory, days-on-market, price cuts, mortgage rates, and local employment; long horizons use each area’s own long-run trend, because 18 years of backtesting says that’s what stays reliable.',
+            },
+            {
+              point: '**The neural network lost fair and square.** The LSTM was diagnosed (training curves, epoch sweeps, feature ablations) and dropped: at ~200 areas of monthly data, it could not beat gradient-boosted trees — matching the latest published benchmark on ZIP-level housing data (HouseTS, 2026).',
+              sub: [
+                'Best 1-year forecaster: pooled XGBoost — 32% more accurate than the no-change baseline',
+                '10-year projections: each area’s long-run trend — 38% more accurate than no-change',
+              ],
+            },
+            {
+              point: '**Data engineering under the hood:** eight public sources (Zillow Research, FRED, Census/ACS, HUD Fair Market Rents, Redfin, LOJIC GIS, Census TIGER, LMPD), a composite boundary layer that recovers 2000-vintage Census geographies for post-merger neighborhoods, and 22 automated tests including leakage guards that prove no forecast ever saw the future.',
+            },
+          ],
+          carousel: [
+            {
+              src: '/images/louisville-housing/model-skill.png',
+              alt: 'Model skill by horizon',
+              caption: 'Forecast accuracy vs the no-change baseline, by horizon — the basis for the horizon-specific engine',
+            },
+            {
+              src: '/images/louisville-housing/momentum-vs-benchmark.png',
+              alt: 'Momentum decay curve',
+              caption: 'Louisville price momentum decays over ~5 years — the pattern that dictates which model handles which horizon',
+            },
+          ],
+        },
+        {
+          heading: 'Honest Limitations',
+          body: [
+            {
+              point: '**Not investment advice.** These are model projections with real uncertainty, built for screening and comparison — not appraisals of individual properties.',
+            },
+            {
+              point: '**Rent data is young.** ZIP-level market rents exist only since ~2016, and 53 of 219 areas lack rent coverage entirely (shown gray). Neighborhood rents are estimated from surrounding ZIPs, never observed directly.',
+            },
+            {
+              point: '**The expense assumption is flat.** Net operating income assumes 40% of rent goes to taxes, insurance, maintenance, management, and vacancy everywhere. High-yield areas in practice carry higher expense ratios — their true cap rates are lower than the map’s.',
+            },
+            {
+              point: '**The training era had no completed bust.** Models learned mostly from 2012–2026, a long expansion. A 2008-style downturn would degrade every model here — the long-horizon numbers especially.',
+            },
+          ],
+        },
+      ]}
+      metrics={[
+        {
+          category: 'Modeling',
+          items: [
+            '6 model families backtested over 35 origins (2008–2025)',
+            '21,841 scored forecasts per model run',
+            '1-yr engine 32% better than no-change baseline; 10-yr engine 38% better',
+          ],
+        },
+        {
+          category: 'Coverage',
+          items: [
+            '128 neighborhoods + 91 metro ZIPs, monthly data 2000–2026',
+            '8 public data sources, all free',
+            '22 automated tests incl. temporal-leakage guards',
+          ],
+        },
+      ]}
+    />
+  )
+}
