@@ -14,7 +14,7 @@ export function LouisvilleHousingPage() {
       ]}
       heroEmbed={{
         // bump ?v= when the map data refreshes so returning visitors bypass cache
-        src: '/louisville-housing/map.html?v=2026-07-04c',
+        src: '/louisville-housing/map.html?v=2026-07-06',
         title: 'Louisville Housing Projections — interactive map',
         height: 640,
         caption:
@@ -105,7 +105,7 @@ export function LouisvilleHousingPage() {
               point: '**Rent data is young.** ZIP-level market rents exist only since ~2016, and 53 of 219 areas lack rent coverage entirely (shown gray). Neighborhood rents are estimated from surrounding ZIPs, never observed directly.',
             },
             {
-              point: '**Expenses are modeled, not observed.** Net operating income uses an area-varying expense ratio (39–65%, median ~47%) built from Census housing-stock age, area vacancy rates, and value-proportional taxes and insurance. It captures systematic differences between areas, but any individual property’s costs can differ substantially from its area’s assumption.',
+              point: '**Expenses are modeled, not observed.** Net operating income uses an area-varying expense ratio (39–65%, median ~47%) built from Census housing-stock age, rental vacancy rates, and value-proportional taxes and insurance. It captures systematic differences between areas, but any individual property’s costs can differ substantially from its area’s assumption.',
             },
             {
               point: '**The training era had no completed bust.** Models learned mostly from 2012–2026, a long expansion. A 2008-style downturn would degrade every model here — the long-horizon numbers especially.',
