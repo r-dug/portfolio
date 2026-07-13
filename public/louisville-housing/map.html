@@ -334,12 +334,19 @@ for (const id of ['w_appr', 'w_cap', 'w_grm'])
   });
 
 // ---------- listings pin layer ----------
-const canvas = L.canvas({padding: 0.3});
+// dedicated pane above the choropleth overlay (400) and below tooltips (650)
+map.createPane('pins');
+map.getPane('pins').style.zIndex = 620;
+const canvas = L.canvas({padding: 0.3, pane: 'pins'});
 let pinLayer = L.layerGroup();
 function pinColor(v) {
   if (v === null || v === undefined) return '#b9b6ad';
   let i = 0; while (i < LBREAKS.length && v > LBREAKS[i]) i++;
   return SEQ[Math.min(i, SEQ.length - 1)];
+}
+function zillowUrl(l) {
+  const q = (l.formattedAddress || '').replace(/[ ,]+/g, '-');
+  return 'https://www.zillow.com/homes/' + encodeURIComponent(q) + '_rb/';
 }
 function pinTip(l) {
   const pc = (x, d=1) => x === null || x === undefined ? '—' : (100*x).toFixed(d) + '%';
@@ -355,6 +362,11 @@ function pinTip(l) {
     `<tr><td>Area total return 5yr</td><td>${pc(l.area_total_return_60m, 2)}/yr</td></tr>` +
     `<tr><td>Mispricing component</td><td>${pc(l.mispricing_component_annual, 2)}/yr</td></tr>` +
     `<tr><td>Provenance</td><td>${l.provenance}</td></tr></table>`;
+}
+function pinPopup(l) {
+  return pinTip(l) +
+    `<div style="margin-top:6px"><a href="${zillowUrl(l)}" target="_blank" ` +
+    `rel="noopener noreferrer">Search this address on Zillow &nearr;</a></div>`;
 }
 function num(id) {
   const v = document.getElementById(id).value;
@@ -394,9 +406,10 @@ function drawPins() {
     if (!passes(l)) continue;
     n++;
     L.circleMarker([l.latitude, l.longitude], {
-      renderer: canvas, radius: 5, weight: 1, color: '#ffffff',
+      renderer: canvas, pane: 'pins', radius: 5, weight: 1, color: '#ffffff',
       fillColor: pinColor(l.area_total_return_60m), fillOpacity: 0.95,
     }).bindTooltip(pinTip(l), {className: 'areatip', sticky: true})
+      .bindPopup(pinPopup(l), {className: 'areatip', maxWidth: 340})
       .addTo(pinLayer);
   }
   document.getElementById('pincount').textContent =
