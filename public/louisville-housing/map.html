@@ -396,7 +396,7 @@ function pinPhotos(l) {
         `padding:1px 4px;border-radius:3px;color:#fff;background:${condBadge(p.score)};` +
         `opacity:.92">${label}</div>` : '';
     return `<div style="position:relative;flex:none">` +
-      `<img src="${p.url}" loading="lazy" referrerpolicy="no-referrer" ` +
+      `<img src="${p.url}" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" ` +
       `style="height:100px;width:auto;border-radius:4px;display:block">` +
       `${badge}</div>`;
   }).join('');
