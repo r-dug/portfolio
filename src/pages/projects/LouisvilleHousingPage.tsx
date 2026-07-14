@@ -14,7 +14,7 @@ export function LouisvilleHousingPage() {
       ]}
       heroEmbed={{
         // bump ?v= when the map data refreshes so returning visitors bypass cache
-        src: '/louisville-housing/map.html?v=2026-07-14b',
+        src: '/louisville-housing/map.html?v=20260714-1457',
         title: 'Louisville Housing Projections — interactive map',
         height: 640,
         caption:
