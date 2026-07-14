@@ -30,7 +30,7 @@
   .panel .sub { color: var(--ink-2); font-size: 12px; margin-bottom: 10px; }
   .row { display: flex; gap: 8px; margin-bottom: 8px; align-items: center; }
   .row label { font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
-               color: var(--ink-2); width: 74px; flex: none; }
+               color: var(--ink-2); width: 92px; flex: none; }
   select { flex: 1; padding: 4px 6px; font: inherit; border: 1px solid var(--line);
            border-radius: 5px; background: var(--surface); color: var(--ink); }
   .legend { margin-top: 10px; }
@@ -38,13 +38,19 @@
   .legend .swatches div { flex: 1; }
   .legend .lab { display: flex; justify-content: space-between;
                  font-size: 11px; color: var(--ink-2); margin-top: 3px; }
-  .fgrid { display: grid; grid-template-columns: 76px 1fr 1fr; gap: 4px 6px;
+  .fgrid { display: grid; grid-template-columns: 96px 1fr 1fr; gap: 4px 6px;
             margin: 6px 0; align-items: center; }
   .fgrid label { font-size: 10px; text-transform: uppercase;
                  letter-spacing: .05em; color: var(--ink-2); }
   .fgrid input { width: 100%; box-sizing: border-box; padding: 2px 4px;
                  font: inherit; font-size: 11px; border: 1px solid var(--line);
                  border-radius: 4px; }
+  .hint { display: inline-flex; align-items: center; justify-content: center;
+          width: 12px; height: 12px; margin-left: 3px; border-radius: 50%;
+          border: 1px solid var(--line); color: var(--ink-2); font-size: 9px;
+          line-height: 1; cursor: help; vertical-align: middle;
+          text-transform: none; letter-spacing: 0; font-weight: 600; }
+  .hint:hover { background: var(--ink-2); color: var(--surface); }
   .wslider input[type=range] { flex: 1; }
   .wslider span { width: 24px; text-align: right; font-size: 11px; color: var(--ink-2); }
   .conf { font-size: 11px; color: var(--ink-2); margin-top: 8px; padding: 7px 9px;
@@ -106,29 +112,29 @@
     <input type="checkbox" id="showpins" style="flex:none"> <span id="pincount" style="font-size:11px;color:var(--ink-2)"></span></div>
   <div id="lfilters" style="display:none">
     <div class="fgrid">
-      <label>Asking $</label><input id="f_ask_lo" type="number" placeholder="min"><input id="f_ask_hi" type="number" placeholder="max">
-      <label>Value est $</label><input id="f_val_lo" type="number" placeholder="min"><input id="f_val_hi" type="number" placeholder="max">
-      <label>Vs market %</label><input id="f_rel_lo" type="number" placeholder="min"><input id="f_rel_hi" type="number" placeholder="max">
-      <label>Expense %</label><input id="f_exp_lo" type="number" placeholder="min"><input id="f_exp_hi" type="number" placeholder="max">
-      <label>Cap rate %</label><input id="f_cap_lo" type="number" placeholder="min"><input id="f_cap_hi" type="number" placeholder="max">
-      <label>Area rtn %</label><input id="f_atr_lo" type="number" placeholder="min"><input id="f_atr_hi" type="number" placeholder="max">
-      <label>Misprice %/yr</label><input id="f_mis_lo" type="number" placeholder="min"><input id="f_mis_hi" type="number" placeholder="max">
-      <label>Off orig %</label><input id="f_cut_lo" type="number" placeholder="min"><input id="f_cut_hi" type="number" placeholder="max">
-      <label>DOM days</label><input id="f_dom_lo" type="number" placeholder="min"><input id="f_dom_hi" type="number" placeholder="max">
-      <label>Cond-adj %</label><input id="f_cadj_lo" type="number" placeholder="min"><input id="f_cadj_hi" type="number" placeholder="max">
-      <label>Photo cond σ</label><input id="f_pc_lo" type="number" placeholder="min"><input id="f_pc_hi" type="number" placeholder="max">
+      <label>Asking $<span class="hint" title="Listing asking price (USD).">?</span></label><input id="f_ask_lo" type="number" placeholder="min"><input id="f_ask_hi" type="number" placeholder="max">
+      <label>Value est $<span class="hint" title="Model's estimated market value (point estimate), before the 80% band.">?</span></label><input id="f_val_lo" type="number" placeholder="min"><input id="f_val_hi" type="number" placeholder="max">
+      <label>Vs market %<span class="hint" title="Asking vs model value estimate. Negative = asking below the model (apparent deal); positive = above.">?</span></label><input id="f_rel_lo" type="number" placeholder="min"><input id="f_rel_hi" type="number" placeholder="max">
+      <label>Expense %<span class="hint" title="Assumed operating-expense ratio (taxes, insurance, maintenance, mgmt, vacancy) used in the NOI/cap-rate calc.">?</span></label><input id="f_exp_lo" type="number" placeholder="min"><input id="f_exp_hi" type="number" placeholder="max">
+      <label>Cap rate %<span class="hint" title="Net operating income / asking price. NOI = est. annual rent x (1 - expense ratio).">?</span></label><input id="f_cap_lo" type="number" placeholder="min"><input id="f_cap_hi" type="number" placeholder="max">
+      <label>Area rtn %<span class="hint" title="The area's projected 5-yr unlevered total return (%/yr), inherited by the property. Not property-specific.">?</span></label><input id="f_atr_lo" type="number" placeholder="min"><input id="f_atr_hi" type="number" placeholder="max">
+      <label>Misprice %/yr<span class="hint" title="Mispricing component: the apparent discount vs the model, amortized over 5 years. Shown separately, never folded into the area return.">?</span></label><input id="f_mis_lo" type="number" placeholder="min"><input id="f_mis_hi" type="number" placeholder="max">
+      <label>Off orig %<span class="hint" title="Change from the original list price (negative = price cuts since first listed).">?</span></label><input id="f_cut_lo" type="number" placeholder="min"><input id="f_cut_hi" type="number" placeholder="max">
+      <label>DOM days<span class="hint" title="Days on market for the current listing.">?</span></label><input id="f_dom_lo" type="number" placeholder="min"><input id="f_dom_hi" type="number" placeholder="max">
+      <label>Cond-adj %<span class="hint" title="Deal score after subtracting the discount explained by visible condition. Photo-covered listings only; blank for the rest.">?</span></label><input id="f_cadj_lo" type="number" placeholder="min"><input id="f_cadj_hi" type="number" placeholder="max">
+      <label>Photo cond σ<span class="hint" title="Composite CLIP condition score in standard deviations across the photographed set. Higher = worse / more visible renovation need.">?</span></label><input id="f_pc_lo" type="number" placeholder="min"><input id="f_pc_hi" type="number" placeholder="max">
     </div>
-    <div class="row"><label for="f_flag">Flag</label>
+    <div class="row"><label for="f_flag">Flag<span class="hint" title="Where asking falls vs the model's 80% value band: below-band / within band / above-band.">?</span></label>
       <select id="f_flag"><option value="">all</option><option>below-band</option>
       <option>within band</option><option>above-band</option></select></div>
-    <div class="row"><label for="f_cond">Condition</label>
+    <div class="row"><label for="f_cond">Condition<span class="hint" title="Filter photographed below-band deals by verdict: 'survives' = discount holds after condition adjustment (real value); 'collapses' = the discount is explained by visible condition.">?</span></label>
       <select id="f_cond"><option value="">all</option>
       <option value="has">has photos</option>
       <option value="residual-value">deal survives (residual-value)</option>
       <option value="condition-explained">deal collapses (condition-explained)</option></select></div>
-    <div class="row"><label for="f_prov">Provenance</label>
+    <div class="row"><label for="f_prov">Provenance<span class="hint" title="Which model/data path produced the estimate (e.g. v1.2 listings-relative asking-market model).">?</span></label>
       <select id="f_prov"><option value="">all</option></select></div>
-    <div class="row"><label for="pcolor">Pin color</label>
+    <div class="row"><label for="pcolor">Pin color<span class="hint" title="What the pin fill encodes: area 5-yr return (blue ramp) or condition verdict (green survives / red collapses / violet other photographed / gray no photos).">?</span></label>
       <select id="pcolor"><option value="atr">area 5-yr return</option>
       <option value="cond">condition verdict</option></select></div>
     <div class="legend"><div class="swatches" id="psw"></div>
